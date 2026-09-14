@@ -1,0 +1,299 @@
+Section FACT-001
+control sensor pump report pump record station calibration station procedure station calibration measurement pump pump archive maintenance operator inspection report monitoring sensor report inspection record archive operator sensor station district review reading maintenance maintenance channel control schedule record pump monitoring measurement measurement maintenance maintenance district measurement rainfall pump.
+The maintenance record identifies the responsible unit for station 001 as ANS-001-47YAYU.
+control sensor pump report pump record station calibration station procedure station calibration measurement pump pump archive maintenance operator inspection report monitoring sensor report inspection record archive operator sensor station district review reading maintenance maintenance channel control schedule record pump monitoring measurement measurement maintenance maintenance district measurement rainfall pump.
+
+Section FACT-002
+rainfall maintenance river report review calibration rainfall measurement monitoring rainfall pump archive schedule review record river channel review monitoring measurement operator procedure river review sensor report review calibration archive schedule maintenance district channel maintenance archive review inspection warning warning measurement measurement sensor warning river schedule operator rainfall pump.
+The calibrated flow reading for gauge 002 is NUM-QGGYS86C cubic meters per hour.
+rainfall maintenance river report review calibration rainfall measurement monitoring rainfall pump archive schedule review record river channel review monitoring measurement operator procedure river review sensor report review calibration archive schedule maintenance district channel maintenance archive review inspection warning warning measurement measurement sensor warning river schedule operator rainfall pump.
+
+Section FACT-003
+calibration reading rainfall inspection measurement record river rainfall calibration station schedule procedure review record review review report schedule pump review inspection sensor monitoring channel procedure schedule monitoring warning measurement monitoring rainfall inspection schedule procedure calibration report station archive review record schedule station sensor record calibration station river reading.
+The scheduled inspection for sensor 003 is on DATE-MJUD2J87.
+calibration reading rainfall inspection measurement record river rainfall calibration station schedule procedure review record review review report schedule pump review inspection sensor monitoring channel procedure schedule monitoring warning measurement monitoring rainfall inspection schedule procedure calibration report station archive review record schedule station sensor record calibration station river reading.
+
+Section FACT-004
+channel rainfall rainfall reading review review monitoring monitoring report report rainfall procedure procedure report archive river warning report calibration river rainfall review measurement rainfall river control archive inspection river rainfall inspection station station station monitoring calibration record inspection operator channel archive procedure calibration station rainfall reading reading maintenance.
+Technician LINK-YES8HCA2 is assigned to monitor reservoir station 004.
+channel rainfall rainfall reading review review monitoring monitoring report report rainfall procedure procedure report archive river warning report calibration river rainfall review measurement rainfall river control archive inspection river rainfall inspection station station station monitoring calibration record inspection operator channel archive procedure calibration station rainfall reading reading maintenance.
+
+Section FACT-005
+operator report control report inspection pump measurement operator operator procedure review operator review maintenance warning district record channel district archive reading station station reading rainfall review station station calibration operator pump control control procedure record sensor inspection inspection rainfall record operator station warning monitoring archive measurement channel review.
+The gate state changed from STATE-SKZKCZRS to STATE-54WW88S3 after the evening inspection.
+operator report control report inspection pump measurement operator operator procedure review operator review maintenance warning district record channel district archive reading station station reading rainfall review station station calibration operator pump control control procedure record sensor inspection inspection rainfall record operator station warning monitoring archive measurement channel review.
+
+Section FACT-006
+monitoring archive station operator reading warning procedure monitoring channel reading monitoring archive inspection station inspection rainfall record record channel sensor archive measurement review review channel measurement district sensor sensor river rainfall procedure channel pump measurement river station inspection archive channel measurement calibration measurement review archive operator operator station.
+During the flood warning, automatic restart at station 006 is RULE-YBEG55G7; manual review is required.
+monitoring archive station operator reading warning procedure monitoring channel reading monitoring archive inspection station inspection rainfall record record channel sensor archive measurement review review channel measurement district sensor sensor river rainfall procedure channel pump measurement river station inspection archive channel measurement calibration measurement review archive operator operator station.
+
+Section FACT-007
+warning report operator schedule reading calibration inspection station monitoring warning control inspection review maintenance sensor record inspection reading procedure schedule sensor schedule record maintenance review rainfall rainfall control district record inspection control river station monitoring archive schedule operator inspection pump sensor reading measurement monitoring river rainfall pump review.
+The report first names channel 007 as PAIR-EU3EZNFC and later states that its downstream control mode is PAIR-MZYTMRDV.
+warning report operator schedule reading calibration inspection station monitoring warning control inspection review maintenance sensor record inspection reading procedure schedule sensor schedule record maintenance review rainfall rainfall control district record inspection control river station monitoring archive schedule operator inspection pump sensor reading measurement monitoring river rainfall pump review.
+
+Section FACT-008
+monitoring reading record procedure channel station control procedure measurement station monitoring warning measurement control channel sensor inspection control record operator monitoring operator reading inspection archive inspection district monitoring river schedule control review pump monitoring operator river calibration pump measurement report schedule calibration monitoring reading maintenance calibration pump procedure.
+The maintenance record identifies the responsible unit for station 008 as ANS-008-4BCT9W.
+monitoring reading record procedure channel station control procedure measurement station monitoring warning measurement control channel sensor inspection control record operator monitoring operator reading inspection archive inspection district monitoring river schedule control review pump monitoring operator river calibration pump measurement report schedule calibration monitoring reading maintenance calibration pump procedure.
+
+Section FACT-009
+monitoring warning report pump archive sensor channel river sensor district channel inspection control sensor archive monitoring schedule station channel operator reading reading maintenance schedule pump inspection control control river reading station record sensor sensor report rainfall pump record reading monitoring procedure calibration calibration district schedule archive sensor reading.
+The calibrated flow reading for gauge 009 is NUM-F83CJETL cubic meters per hour.
+monitoring warning report pump archive sensor channel river sensor district channel inspection control sensor archive monitoring schedule station channel operator reading reading maintenance schedule pump inspection control control river reading station record sensor sensor report rainfall pump record reading monitoring procedure calibration calibration district schedule archive sensor reading.
+
+Section FACT-010
+maintenance control monitoring archive sensor channel river pump channel report warning measurement report measurement district district rainfall rainfall control station district measurement report warning record channel station monitoring schedule channel measurement reading calibration pump station reading report district rainfall rainfall operator station record station archive operator monitoring calibration.
+The scheduled inspection for sensor 010 is on DATE-WP5454N8.
+maintenance control monitoring archive sensor channel river pump channel report warning measurement report measurement district district rainfall rainfall control station district measurement report warning record channel station monitoring schedule channel measurement reading calibration pump station reading report district rainfall rainfall operator station record station archive operator monitoring calibration.
+
+Section FACT-011
+archive review rainfall maintenance sensor archive monitoring monitoring inspection calibration inspection procedure station warning schedule archive measurement record control reading channel rainfall river review station record record operator river rainfall procedure review station river rainfall procedure archive river warning calibration rainfall review inspection sensor archive measurement record measurement.
+Technician LINK-NKYFJC2S is assigned to monitor reservoir station 011.
+archive review rainfall maintenance sensor archive monitoring monitoring inspection calibration inspection procedure station warning schedule archive measurement record control reading channel rainfall river review station record record operator river rainfall procedure review station river rainfall procedure archive river warning calibration rainfall review inspection sensor archive measurement record measurement.
+
+Section FACT-012
+archive river control operator procedure rainfall maintenance control pump maintenance warning monitoring calibration schedule calibration archive schedule pump report schedule record reading station control procedure rainfall schedule control monitoring monitoring channel reading reading procedure reading inspection procedure channel inspection district monitoring measurement reading operator district river operator operator.
+The gate state changed from STATE-PW7D52SJ to STATE-BM6TZRY6 after the evening inspection.
+archive river control operator procedure rainfall maintenance control pump maintenance warning monitoring calibration schedule calibration archive schedule pump report schedule record reading station control procedure rainfall schedule control monitoring monitoring channel reading reading procedure reading inspection procedure channel inspection district monitoring measurement reading operator district river operator operator.
+
+Section FACT-013
+record calibration sensor station calibration inspection warning reading measurement channel operator operator river pump rainfall district procedure maintenance warning river monitoring reading maintenance operator record procedure station review reading warning report pump district station calibration report rainfall schedule channel sensor pump monitoring archive maintenance record channel warning sensor.
+During the flood warning, automatic restart at station 013 is RULE-SFNDQ2B3; manual review is required.
+record calibration sensor station calibration inspection warning reading measurement channel operator operator river pump rainfall district procedure maintenance warning river monitoring reading maintenance operator record procedure station review reading warning report pump district station calibration report rainfall schedule channel sensor pump monitoring archive maintenance record channel warning sensor.
+
+Section FACT-014
+operator calibration schedule inspection warning rainfall calibration pump inspection sensor channel maintenance schedule district warning river station rainfall channel rainfall channel control control warning pump operator archive procedure control archive operator rainfall station reading sensor operator review warning control monitoring record record sensor calibration pump pump archive monitoring.
+The report first names channel 014 as PAIR-66R54QX4 and later states that its downstream control mode is PAIR-MP4XTERV.
+operator calibration schedule inspection warning rainfall calibration pump inspection sensor channel maintenance schedule district warning river station rainfall channel rainfall channel control control warning pump operator archive procedure control archive operator rainfall station reading sensor operator review warning control monitoring record record sensor calibration pump pump archive monitoring.
+
+Section FACT-015
+inspection procedure inspection warning procedure district control channel record channel procedure station calibration river inspection maintenance sensor rainfall monitoring review river report channel inspection pump record record inspection review river monitoring schedule sensor rainfall procedure pump archive inspection monitoring warning maintenance channel maintenance procedure pump river warning channel.
+The maintenance record identifies the responsible unit for station 015 as ANS-015-AQ5NVN.
+inspection procedure inspection warning procedure district control channel record channel procedure station calibration river inspection maintenance sensor rainfall monitoring review river report channel inspection pump record record inspection review river monitoring schedule sensor rainfall procedure pump archive inspection monitoring warning maintenance channel maintenance procedure pump river warning channel.
+
+Section FACT-016
+archive schedule record report district report record procedure control district warning operator inspection pump review rainfall warning district measurement operator district maintenance inspection inspection schedule station record schedule schedule report rainfall reading pump inspection measurement schedule inspection district review report inspection calibration monitoring measurement schedule maintenance schedule maintenance.
+The calibrated flow reading for gauge 016 is NUM-MCPDVCRA cubic meters per hour.
+archive schedule record report district report record procedure control district warning operator inspection pump review rainfall warning district measurement operator district maintenance inspection inspection schedule station record schedule schedule report rainfall reading pump inspection measurement schedule inspection district review report inspection calibration monitoring measurement schedule maintenance schedule maintenance.
+
+Section FACT-017
+control reading schedule inspection channel reading report warning measurement inspection pump reading measurement maintenance procedure monitoring archive district sensor reading inspection channel district control inspection sensor schedule sensor channel maintenance schedule maintenance reading control river sensor control control station operator review sensor sensor monitoring sensor pump maintenance record.
+The scheduled inspection for sensor 017 is on DATE-2MRP9U74.
+control reading schedule inspection channel reading report warning measurement inspection pump reading measurement maintenance procedure monitoring archive district sensor reading inspection channel district control inspection sensor schedule sensor channel maintenance schedule maintenance reading control river sensor control control station operator review sensor sensor monitoring sensor pump maintenance record.
+
+Section FACT-018
+station channel procedure procedure rainfall monitoring pump sensor review channel operator report channel procedure pump rainfall pump rainfall rainfall control rainfall channel station inspection rainfall pump operator record reading monitoring pump review procedure operator control warning district measurement rainfall record archive measurement control station channel archive record channel.
+Technician LINK-UGUNMGU7 is assigned to monitor reservoir station 018.
+station channel procedure procedure rainfall monitoring pump sensor review channel operator report channel procedure pump rainfall pump rainfall rainfall control rainfall channel station inspection rainfall pump operator record reading monitoring pump review procedure operator control warning district measurement rainfall record archive measurement control station channel archive record channel.
+
+Section FACT-019
+rainfall maintenance operator control pump warning calibration archive archive procedure station archive schedule sensor monitoring pump warning pump maintenance maintenance inspection maintenance control operator archive channel archive warning rainfall report control measurement review warning inspection district review channel station sensor pump operator calibration channel archive procedure sensor river.
+The gate state changed from STATE-ZB43UTUU to STATE-RFXZV85T after the evening inspection.
+rainfall maintenance operator control pump warning calibration archive archive procedure station archive schedule sensor monitoring pump warning pump maintenance maintenance inspection maintenance control operator archive channel archive warning rainfall report control measurement review warning inspection district review channel station sensor pump operator calibration channel archive procedure sensor river.
+
+Section FACT-020
+maintenance procedure record review measurement schedule warning control measurement maintenance operator sensor report pump procedure pump river maintenance rainfall archive reading control river measurement pump warning review review maintenance control maintenance rainfall district monitoring maintenance measurement operator control reading measurement maintenance calibration procedure review calibration measurement station archive.
+During the flood warning, automatic restart at station 020 is RULE-ABU8BHTF; manual review is required.
+maintenance procedure record review measurement schedule warning control measurement maintenance operator sensor report pump procedure pump river maintenance rainfall archive reading control river measurement pump warning review review maintenance control maintenance rainfall district monitoring maintenance measurement operator control reading measurement maintenance calibration procedure review calibration measurement station archive.
+
+Section FACT-021
+station archive inspection measurement river rainfall monitoring schedule archive control calibration review archive sensor control calibration archive maintenance record sensor calibration river schedule schedule channel station warning maintenance report schedule reading river sensor calibration schedule control pump monitoring river reading district reading channel sensor rainfall station station sensor.
+The report first names channel 021 as PAIR-FUFC426W and later states that its downstream control mode is PAIR-FPZVZWA7.
+station archive inspection measurement river rainfall monitoring schedule archive control calibration review archive sensor control calibration archive maintenance record sensor calibration river schedule schedule channel station warning maintenance report schedule reading river sensor calibration schedule control pump monitoring river reading district reading channel sensor rainfall station station sensor.
+
+Section FACT-022
+station report schedule monitoring review station measurement review schedule pump calibration measurement record station district maintenance record river monitoring warning inspection maintenance station schedule reading schedule station operator measurement review control district record station station rainfall maintenance measurement rainfall review station warning station measurement maintenance warning operator calibration.
+The maintenance record identifies the responsible unit for station 022 as ANS-022-2FD6TQ.
+station report schedule monitoring review station measurement review schedule pump calibration measurement record station district maintenance record river monitoring warning inspection maintenance station schedule reading schedule station operator measurement review control district record station station rainfall maintenance measurement rainfall review station warning station measurement maintenance warning operator calibration.
+
+Section FACT-023
+river station operator monitoring station inspection station rainfall district measurement station inspection reading schedule station district district river sensor maintenance pump station monitoring station warning reading calibration pump archive river inspection rainfall channel procedure record pump maintenance calibration river report calibration channel review warning district record operator control.
+The calibrated flow reading for gauge 023 is NUM-AMBZKEY5 cubic meters per hour.
+river station operator monitoring station inspection station rainfall district measurement station inspection reading schedule station district district river sensor maintenance pump station monitoring station warning reading calibration pump archive river inspection rainfall channel procedure record pump maintenance calibration river report calibration channel review warning district record operator control.
+
+Section FACT-024
+warning schedule procedure river schedule procedure operator procedure channel inspection calibration pump inspection control procedure sensor rainfall schedule schedule procedure control record reading district rainfall report measurement river inspection river record operator measurement review station station warning record river schedule schedule control procedure district schedule warning measurement reading.
+The scheduled inspection for sensor 024 is on DATE-6CJBGJB4.
+warning schedule procedure river schedule procedure operator procedure channel inspection calibration pump inspection control procedure sensor rainfall schedule schedule procedure control record reading district rainfall report measurement river inspection river record operator measurement review station station warning record river schedule schedule control procedure district schedule warning measurement reading.
+
+Section FACT-025
+district measurement calibration measurement inspection control warning control calibration warning review maintenance calibration river archive sensor monitoring archive monitoring river sensor pump reading record report calibration operator pump schedule schedule district review station reading rainfall maintenance measurement rainfall sensor maintenance measurement station reading district operator inspection river measurement.
+Technician LINK-WXLRDGVK is assigned to monitor reservoir station 025.
+district measurement calibration measurement inspection control warning control calibration warning review maintenance calibration river archive sensor monitoring archive monitoring river sensor pump reading record report calibration operator pump schedule schedule district review station reading rainfall maintenance measurement rainfall sensor maintenance measurement station reading district operator inspection river measurement.
+
+Section FACT-026
+record warning reading rainfall report inspection record procedure pump inspection record pump channel reading measurement report station procedure sensor river operator maintenance warning monitoring sensor monitoring report river reading report schedule control calibration schedule measurement pump warning pump operator station maintenance procedure calibration warning warning calibration archive record.
+The gate state changed from STATE-VKDBATKJ to STATE-8VBBBVU5 after the evening inspection.
+record warning reading rainfall report inspection record procedure pump inspection record pump channel reading measurement report station procedure sensor river operator maintenance warning monitoring sensor monitoring report river reading report schedule control calibration schedule measurement pump warning pump operator station maintenance procedure calibration warning warning calibration archive record.
+
+Section FACT-027
+district river rainfall reading calibration rainfall warning archive control reading report pump pump maintenance schedule channel report inspection pump sensor measurement record sensor inspection control review reading record channel inspection reading measurement pump archive review rainfall review reading river schedule archive maintenance sensor schedule inspection inspection review record.
+During the flood warning, automatic restart at station 027 is RULE-TWTM4VKF; manual review is required.
+district river rainfall reading calibration rainfall warning archive control reading report pump pump maintenance schedule channel report inspection pump sensor measurement record sensor inspection control review reading record channel inspection reading measurement pump archive review rainfall review reading river schedule archive maintenance sensor schedule inspection inspection review record.
+
+Section FACT-028
+review channel station rainfall schedule archive control schedule schedule maintenance operator procedure rainfall pump record river rainfall warning measurement review record archive operator pump pump operator procedure measurement pump control monitoring schedule monitoring inspection channel reading archive inspection maintenance pump sensor reading report station station reading review operator.
+The report first names channel 028 as PAIR-SHVBSJSC and later states that its downstream control mode is PAIR-C5RE7EVM.
+review channel station rainfall schedule archive control schedule schedule maintenance operator procedure rainfall pump record river rainfall warning measurement review record archive operator pump pump operator procedure measurement pump control monitoring schedule monitoring inspection channel reading archive inspection maintenance pump sensor reading report station station reading review operator.
+
+Section FACT-029
+inspection maintenance operator archive maintenance schedule station record warning channel report procedure river record review rainfall maintenance review operator pump station measurement measurement district control district channel control control river operator inspection review archive report review rainfall calibration operator measurement procedure archive inspection station record calibration archive maintenance.
+The maintenance record identifies the responsible unit for station 029 as ANS-029-P24JEC.
+inspection maintenance operator archive maintenance schedule station record warning channel report procedure river record review rainfall maintenance review operator pump station measurement measurement district control district channel control control river operator inspection review archive report review rainfall calibration operator measurement procedure archive inspection station record calibration archive maintenance.
+
+Section FACT-030
+measurement rainfall calibration procedure calibration report procedure district record calibration schedule station pump reading warning inspection archive sensor sensor maintenance river warning rainfall monitoring district control control record control station review inspection pump sensor warning maintenance warning warning calibration reading report channel warning monitoring procedure review calibration station.
+The calibrated flow reading for gauge 030 is NUM-UX388PD5 cubic meters per hour.
+measurement rainfall calibration procedure calibration report procedure district record calibration schedule station pump reading warning inspection archive sensor sensor maintenance river warning rainfall monitoring district control control record control station review inspection pump sensor warning maintenance warning warning calibration reading report channel warning monitoring procedure review calibration station.
+
+Section FACT-031
+maintenance river procedure report archive review control monitoring reading measurement monitoring sensor channel maintenance archive operator rainfall station operator inspection record pump archive archive pump river control procedure calibration channel channel pump sensor control report operator sensor schedule control procedure monitoring archive warning operator operator station warning archive.
+The scheduled inspection for sensor 031 is on DATE-EEQGBP8Y.
+maintenance river procedure report archive review control monitoring reading measurement monitoring sensor channel maintenance archive operator rainfall station operator inspection record pump archive archive pump river control procedure calibration channel channel pump sensor control report operator sensor schedule control procedure monitoring archive warning operator operator station warning archive.
+
+Section FACT-032
+district district inspection schedule monitoring inspection river channel river district archive warning procedure district pump procedure channel district channel warning reading measurement calibration calibration operator record operator maintenance procedure measurement measurement inspection river schedule pump monitoring reading inspection procedure warning warning archive control record report archive measurement procedure.
+Technician LINK-NMGWJXT5 is assigned to monitor reservoir station 032.
+district district inspection schedule monitoring inspection river channel river district archive warning procedure district pump procedure channel district channel warning reading measurement calibration calibration operator record operator maintenance procedure measurement measurement inspection river schedule pump monitoring reading inspection procedure warning warning archive control record report archive measurement procedure.
+
+Section FACT-033
+maintenance station reading reading rainfall measurement schedule schedule measurement monitoring operator procedure archive reading control procedure district reading calibration warning measurement measurement control review sensor report procedure control maintenance review control schedule maintenance rainfall pump review schedule inspection reading calibration procedure control channel channel inspection operator station warning.
+The gate state changed from STATE-HMUSQUGG to STATE-RNXY8QH4 after the evening inspection.
+maintenance station reading reading rainfall measurement schedule schedule measurement monitoring operator procedure archive reading control procedure district reading calibration warning measurement measurement control review sensor report procedure control maintenance review control schedule maintenance rainfall pump review schedule inspection reading calibration procedure control channel channel inspection operator station warning.
+
+Section FACT-034
+sensor control pump rainfall warning operator measurement station rainfall procedure measurement schedule inspection measurement district review record inspection maintenance maintenance report maintenance archive schedule calibration calibration schedule archive river pump monitoring measurement schedule monitoring review procedure rainfall review pump warning maintenance report reading measurement district record reading channel.
+During the flood warning, automatic restart at station 034 is RULE-8AGXS3TY; manual review is required.
+sensor control pump rainfall warning operator measurement station rainfall procedure measurement schedule inspection measurement district review record inspection maintenance maintenance report maintenance archive schedule calibration calibration schedule archive river pump monitoring measurement schedule monitoring review procedure rainfall review pump warning maintenance report reading measurement district record reading channel.
+
+Section FACT-035
+review measurement inspection monitoring reading measurement river sensor archive calibration archive pump report sensor warning review maintenance report warning warning reading procedure measurement operator station rainfall maintenance report maintenance pump monitoring review inspection inspection inspection operator pump pump schedule schedule river inspection calibration archive monitoring procedure sensor operator.
+The report first names channel 035 as PAIR-FJ99RUTC and later states that its downstream control mode is PAIR-P77LWDJX.
+review measurement inspection monitoring reading measurement river sensor archive calibration archive pump report sensor warning review maintenance report warning warning reading procedure measurement operator station rainfall maintenance report maintenance pump monitoring review inspection inspection inspection operator pump pump schedule schedule river inspection calibration archive monitoring procedure sensor operator.
+
+Section FACT-036
+control procedure calibration sensor report operator maintenance record rainfall reading calibration rainfall river reading maintenance river monitoring operator warning inspection procedure station rainfall monitoring maintenance station pump maintenance inspection procedure schedule measurement archive station monitoring archive station monitoring district rainfall station review schedule maintenance procedure record review report.
+The maintenance record identifies the responsible unit for station 036 as ANS-036-ZSHRE4.
+control procedure calibration sensor report operator maintenance record rainfall reading calibration rainfall river reading maintenance river monitoring operator warning inspection procedure station rainfall monitoring maintenance station pump maintenance inspection procedure schedule measurement archive station monitoring archive station monitoring district rainfall station review schedule maintenance procedure record review report.
+
+Section FACT-037
+operator sensor procedure river schedule archive reading operator maintenance report district district review rainfall station monitoring inspection warning measurement district measurement review channel monitoring river sensor measurement operator pump procedure measurement maintenance record control archive rainfall reading monitoring district archive report archive channel rainfall operator review channel station.
+The calibrated flow reading for gauge 037 is NUM-RUJVZSLB cubic meters per hour.
+operator sensor procedure river schedule archive reading operator maintenance report district district review rainfall station monitoring inspection warning measurement district measurement review channel monitoring river sensor measurement operator pump procedure measurement maintenance record control archive rainfall reading monitoring district archive report archive channel rainfall operator review channel station.
+
+Section FACT-038
+procedure sensor review control record maintenance measurement record maintenance record pump review river calibration record pump review station procedure reading schedule station rainfall warning river reading record pump district channel pump reading inspection station warning station inspection warning archive maintenance maintenance procedure monitoring reading warning inspection river report.
+The scheduled inspection for sensor 038 is on DATE-9DNQDMB4.
+procedure sensor review control record maintenance measurement record maintenance record pump review river calibration record pump review station procedure reading schedule station rainfall warning river reading record pump district channel pump reading inspection station warning station inspection warning archive maintenance maintenance procedure monitoring reading warning inspection river report.
+
+Section FACT-039
+schedule monitoring maintenance control station monitoring control schedule station report operator review warning pump archive reading review rainfall report monitoring review monitoring inspection control reading calibration schedule report schedule rainfall warning report procedure monitoring calibration pump maintenance procedure operator schedule inspection district warning operator channel station reading warning.
+Technician LINK-37YRDSJP is assigned to monitor reservoir station 039.
+schedule monitoring maintenance control station monitoring control schedule station report operator review warning pump archive reading review rainfall report monitoring review monitoring inspection control reading calibration schedule report schedule rainfall warning report procedure monitoring calibration pump maintenance procedure operator schedule inspection district warning operator channel station reading warning.
+
+Section FACT-040
+rainfall reading measurement maintenance calibration control operator channel calibration maintenance district report reading control schedule channel inspection schedule sensor warning review pump maintenance river station maintenance channel maintenance control river maintenance calibration station inspection maintenance procedure review calibration rainfall district district sensor warning monitoring maintenance warning pump review.
+The gate state changed from STATE-U8PBBFLW to STATE-BBJVS9C4 after the evening inspection.
+rainfall reading measurement maintenance calibration control operator channel calibration maintenance district report reading control schedule channel inspection schedule sensor warning review pump maintenance river station maintenance channel maintenance control river maintenance calibration station inspection maintenance procedure review calibration rainfall district district sensor warning monitoring maintenance warning pump review.
+
+Section FACT-041
+schedule channel operator calibration pump inspection river river review reading reading maintenance schedule rainfall control archive review sensor rainfall district inspection inspection district district record review sensor archive station inspection inspection calibration report report maintenance sensor monitoring inspection control channel warning record channel reading control control district report.
+During the flood warning, automatic restart at station 041 is RULE-6YRZ5UNW; manual review is required.
+schedule channel operator calibration pump inspection river river review reading reading maintenance schedule rainfall control archive review sensor rainfall district inspection inspection district district record review sensor archive station inspection inspection calibration report report maintenance sensor monitoring inspection control channel warning record channel reading control control district report.
+
+Section FACT-042
+archive calibration pump control maintenance procedure control warning warning measurement schedule district district pump review schedule record pump river station station sensor archive record station schedule maintenance control operator rainfall record control archive sensor warning report inspection record monitoring pump inspection inspection warning measurement schedule maintenance river archive.
+The report first names channel 042 as PAIR-4SYZ2AUV and later states that its downstream control mode is PAIR-F6M4AP2D.
+archive calibration pump control maintenance procedure control warning warning measurement schedule district district pump review schedule record pump river station station sensor archive record station schedule maintenance control operator rainfall record control archive sensor warning report inspection record monitoring pump inspection inspection warning measurement schedule maintenance river archive.
+
+Section FACT-043
+inspection river calibration measurement maintenance control report warning monitoring maintenance archive monitoring operator schedule river control maintenance calibration calibration maintenance monitoring control maintenance monitoring archive review sensor sensor schedule review station inspection procedure pump measurement sensor procedure district reading operator operator measurement procedure calibration report review pump channel.
+The maintenance record identifies the responsible unit for station 043 as ANS-043-XC3Q8F.
+inspection river calibration measurement maintenance control report warning monitoring maintenance archive monitoring operator schedule river control maintenance calibration calibration maintenance monitoring control maintenance monitoring archive review sensor sensor schedule review station inspection procedure pump measurement sensor procedure district reading operator operator measurement procedure calibration report review pump channel.
+
+Section FACT-044
+record report inspection warning calibration channel maintenance sensor monitoring rainfall procedure calibration sensor record river control rainfall record channel district warning river operator report schedule archive calibration monitoring maintenance archive measurement channel maintenance calibration monitoring record schedule station reading sensor pump report monitoring rainfall warning reading control control.
+The calibrated flow reading for gauge 044 is NUM-QSDX9NNJ cubic meters per hour.
+record report inspection warning calibration channel maintenance sensor monitoring rainfall procedure calibration sensor record river control rainfall record channel district warning river operator report schedule archive calibration monitoring maintenance archive measurement channel maintenance calibration monitoring record schedule station reading sensor pump report monitoring rainfall warning reading control control.
+
+Section FACT-045
+maintenance channel monitoring record sensor sensor control district rainfall reading measurement pump station maintenance control archive district river operator schedule district calibration operator record river channel river record schedule monitoring warning record sensor schedule rainfall sensor maintenance sensor sensor calibration record river operator sensor river rainfall monitoring record.
+The scheduled inspection for sensor 045 is on DATE-6S25CYWZ.
+maintenance channel monitoring record sensor sensor control district rainfall reading measurement pump station maintenance control archive district river operator schedule district calibration operator record river channel river record schedule monitoring warning record sensor schedule rainfall sensor maintenance sensor sensor calibration record river operator sensor river rainfall monitoring record.
+
+Section FACT-046
+calibration channel station procedure control river rainfall rainfall report control review archive station schedule operator channel maintenance warning river river calibration rainfall river calibration channel inspection warning archive maintenance calibration inspection control review record district record channel procedure calibration station measurement record measurement channel monitoring operator river review.
+Technician LINK-2G549ZDQ is assigned to monitor reservoir station 046.
+calibration channel station procedure control river rainfall rainfall report control review archive station schedule operator channel maintenance warning river river calibration rainfall river calibration channel inspection warning archive maintenance calibration inspection control review record district record channel procedure calibration station measurement record measurement channel monitoring operator river review.
+
+Section FACT-047
+maintenance warning river report channel procedure district sensor maintenance calibration procedure pump operator calibration report procedure control reading warning maintenance calibration pump district operator pump control rainfall record channel maintenance warning district district district archive maintenance station maintenance station calibration schedule pump river warning pump sensor control maintenance.
+The gate state changed from STATE-WPJEQH3T to STATE-PFRLKE6V after the evening inspection.
+maintenance warning river report channel procedure district sensor maintenance calibration procedure pump operator calibration report procedure control reading warning maintenance calibration pump district operator pump control rainfall record channel maintenance warning district district district archive maintenance station maintenance station calibration schedule pump river warning pump sensor control maintenance.
+
+Section FACT-048
+rainfall sensor control measurement report report record district archive rainfall calibration report operator report control report sensor sensor operator record monitoring record archive rainfall river warning maintenance archive channel monitoring channel operator inspection rainfall calibration warning operator control channel measurement maintenance archive monitoring procedure river district district report.
+During the flood warning, automatic restart at station 048 is RULE-63J7CKQL; manual review is required.
+rainfall sensor control measurement report report record district archive rainfall calibration report operator report control report sensor sensor operator record monitoring record archive rainfall river warning maintenance archive channel monitoring channel operator inspection rainfall calibration warning operator control channel measurement maintenance archive monitoring procedure river district district report.
+
+Section FACT-049
+rainfall channel control district schedule review reading record district monitoring warning district archive warning calibration review monitoring river river district inspection schedule calibration sensor rainfall calibration warning warning procedure archive reading reading pump reading record archive archive channel measurement operator sensor inspection review pump review measurement sensor record.
+The report first names channel 049 as PAIR-MBC7WNDJ and later states that its downstream control mode is PAIR-JZ25XQZS.
+rainfall channel control district schedule review reading record district monitoring warning district archive warning calibration review monitoring river river district inspection schedule calibration sensor rainfall calibration warning warning procedure archive reading reading pump reading record archive archive channel measurement operator sensor inspection review pump review measurement sensor record.
+
+Section FACT-050
+station control measurement monitoring procedure sensor warning schedule rainfall archive warning district reading monitoring channel record district station record monitoring record river schedule pump procedure maintenance rainfall measurement maintenance warning procedure reading rainfall sensor pump maintenance warning reading operator control sensor rainfall measurement monitoring pump district measurement operator.
+The maintenance record identifies the responsible unit for station 050 as ANS-050-5NQGBY.
+station control measurement monitoring procedure sensor warning schedule rainfall archive warning district reading monitoring channel record district station record monitoring record river schedule pump procedure maintenance rainfall measurement maintenance warning procedure reading rainfall sensor pump maintenance warning reading operator control sensor rainfall measurement monitoring pump district measurement operator.
+
+Section FACT-051
+rainfall river review warning control report control archive schedule monitoring pump report rainfall inspection schedule measurement channel sensor monitoring measurement review procedure warning river control report warning warning measurement inspection report pump warning measurement record record river channel review river record measurement district control operator control maintenance maintenance.
+The calibrated flow reading for gauge 051 is NUM-J6TJM4TX cubic meters per hour.
+rainfall river review warning control report control archive schedule monitoring pump report rainfall inspection schedule measurement channel sensor monitoring measurement review procedure warning river control report warning warning measurement inspection report pump warning measurement record record river channel review river record measurement district control operator control maintenance maintenance.
+
+Section FACT-052
+warning procedure pump procedure calibration inspection channel station station procedure review rainfall schedule sensor inspection inspection measurement calibration calibration channel sensor station district record schedule rainfall warning calibration rainfall reading review monitoring schedule record calibration district river district station reading procedure archive river channel calibration reading inspection record.
+The scheduled inspection for sensor 052 is on DATE-T8GGYZ5N.
+warning procedure pump procedure calibration inspection channel station station procedure review rainfall schedule sensor inspection inspection measurement calibration calibration channel sensor station district record schedule rainfall warning calibration rainfall reading review monitoring schedule record calibration district river district station reading procedure archive river channel calibration reading inspection record.
+
+Section FACT-053
+operator reading schedule control sensor monitoring review reading maintenance record procedure review pump archive reading procedure maintenance monitoring record station reading maintenance channel warning calibration record measurement inspection archive rainfall channel river operator monitoring review river schedule schedule operator measurement control archive warning maintenance rainfall district control archive.
+Technician LINK-4DSCVRUW is assigned to monitor reservoir station 053.
+operator reading schedule control sensor monitoring review reading maintenance record procedure review pump archive reading procedure maintenance monitoring record station reading maintenance channel warning calibration record measurement inspection archive rainfall channel river operator monitoring review river schedule schedule operator measurement control archive warning maintenance rainfall district control archive.
+
+Section FACT-054
+measurement operator review river sensor review sensor inspection operator inspection measurement reading station calibration record reading station operator station archive maintenance operator rainfall monitoring rainfall inspection rainfall calibration river river inspection inspection maintenance operator monitoring river river control review river inspection warning review maintenance operator monitoring monitoring inspection.
+The gate state changed from STATE-NJ6E3N5C to STATE-EQC5ZTG7 after the evening inspection.
+measurement operator review river sensor review sensor inspection operator inspection measurement reading station calibration record reading station operator station archive maintenance operator rainfall monitoring rainfall inspection rainfall calibration river river inspection inspection maintenance operator monitoring river river control review river inspection warning review maintenance operator monitoring monitoring inspection.
+
+Section FACT-055
+maintenance river station procedure schedule schedule rainfall control operator maintenance monitoring record rainfall archive calibration warning maintenance calibration district schedule sensor sensor review procedure report river district warning schedule calibration monitoring district maintenance rainfall sensor procedure monitoring river report archive report maintenance inspection measurement inspection schedule inspection archive.
+During the flood warning, automatic restart at station 055 is RULE-KLY4NSW9; manual review is required.
+maintenance river station procedure schedule schedule rainfall control operator maintenance monitoring record rainfall archive calibration warning maintenance calibration district schedule sensor sensor review procedure report river district warning schedule calibration monitoring district maintenance rainfall sensor procedure monitoring river report archive report maintenance inspection measurement inspection schedule inspection archive.
+
+Section FACT-056
+maintenance review rainfall warning measurement record review district inspection review calibration schedule report procedure monitoring calibration operator monitoring river report sensor control calibration review sensor sensor warning district maintenance rainfall channel schedule reading reading record warning operator monitoring operator reading archive inspection report sensor calibration calibration control station.
+The report first names channel 056 as PAIR-LNB82UDP and later states that its downstream control mode is PAIR-B5932U3U.
+maintenance review rainfall warning measurement record review district inspection review calibration schedule report procedure monitoring calibration operator monitoring river report sensor control calibration review sensor sensor warning district maintenance rainfall channel schedule reading reading record warning operator monitoring operator reading archive inspection report sensor calibration calibration control station.
+
+Section FACT-057
+maintenance monitoring control review report schedule report review review schedule monitoring channel monitoring channel review maintenance pump calibration rainfall maintenance sensor monitoring river monitoring measurement district inspection monitoring sensor river rainfall channel reading control procedure channel report procedure river control inspection operator procedure channel procedure operator monitoring operator.
+The maintenance record identifies the responsible unit for station 057 as ANS-057-7ZMZQ3.
+maintenance monitoring control review report schedule report review review schedule monitoring channel monitoring channel review maintenance pump calibration rainfall maintenance sensor monitoring river monitoring measurement district inspection monitoring sensor river rainfall channel reading control procedure channel report procedure river control inspection operator procedure channel procedure operator monitoring operator.
+
+Section FACT-058
+station review control maintenance operator maintenance rainfall monitoring channel record measurement report station warning rainfall district operator inspection schedule channel sensor warning record operator review warning inspection river river archive station schedule station station archive maintenance operator maintenance schedule pump control warning archive maintenance channel pump operator monitoring.
+The calibrated flow reading for gauge 058 is NUM-7ANCD5ZX cubic meters per hour.
+station review control maintenance operator maintenance rainfall monitoring channel record measurement report station warning rainfall district operator inspection schedule channel sensor warning record operator review warning inspection river river archive station schedule station station archive maintenance operator maintenance schedule pump control warning archive maintenance channel pump operator monitoring.
+
+Section FACT-059
+control station archive measurement channel reading warning calibration channel inspection calibration monitoring report district station pump archive measurement pump maintenance measurement review archive sensor warning maintenance control procedure warning monitoring maintenance rainfall monitoring station calibration sensor archive pump pump maintenance report procedure review district channel archive archive channel.
+The scheduled inspection for sensor 059 is on DATE-347BLDSW.
+control station archive measurement channel reading warning calibration channel inspection calibration monitoring report district station pump archive measurement pump maintenance measurement review archive sensor warning maintenance control procedure warning monitoring maintenance rainfall monitoring station calibration sensor archive pump pump maintenance report procedure review district channel archive archive channel.
+
+Section FACT-060
+reading rainfall report archive procedure inspection district reading control inspection rainfall archive rainfall calibration procedure channel reading river maintenance district monitoring channel river calibration channel rainfall river rainfall river calibration warning channel procedure measurement archive procedure schedule measurement review inspection measurement river procedure schedule record measurement report sensor.
+Technician LINK-SHTTBJQC is assigned to monitor reservoir station 060.
+reading rainfall report archive procedure inspection district reading control inspection rainfall archive rainfall calibration procedure channel reading river maintenance district monitoring channel river calibration channel rainfall river rainfall river calibration warning channel procedure measurement archive procedure schedule measurement review inspection measurement river procedure schedule record measurement report sensor.

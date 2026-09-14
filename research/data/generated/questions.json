@@ -1,0 +1,62 @@
+[
+  {
+    "question_id": "Q-01",
+    "fact_id": "FACT-001",
+    "type": "simple_fact",
+    "question": "Which unit is responsible for station 001?",
+    "answer": "ANS-001-47YAYU"
+  },
+  {
+    "question_id": "Q-02",
+    "fact_id": "FACT-009",
+    "type": "numeric_fact",
+    "question": "What is the calibrated flow reading for gauge 009?",
+    "answer": "NUM-F83CJETL"
+  },
+  {
+    "question_id": "Q-03",
+    "fact_id": "FACT-017",
+    "type": "temporal_fact",
+    "question": "When is the scheduled inspection for sensor 017?",
+    "answer": "DATE-2MRP9U74"
+  },
+  {
+    "question_id": "Q-04",
+    "fact_id": "FACT-026",
+    "type": "state_update",
+    "question": "What was the final gate state for station 026?",
+    "answer": "STATE-8VBBBVU5"
+  },
+  {
+    "question_id": "Q-05",
+    "fact_id": "FACT-035",
+    "type": "cross_chunk_relation",
+    "question": "What downstream control mode belongs to channel 035?",
+    "answer": "PAIR-P77LWDJX"
+  },
+  {
+    "question_id": "Q-06",
+    "fact_id": "FACT-044",
+    "type": "numeric_fact",
+    "question": "What is the calibrated flow reading for gauge 044?",
+    "answer": "NUM-QSDX9NNJ"
+  },
+  {
+    "question_id": "Q-07",
+    "fact_id": "FACT-053",
+    "type": "entity_relation",
+    "question": "Which technician monitors reservoir station 053?",
+    "answer": "LINK-4DSCVRUW"
+  },
+  {
+    "question_id": "Q-08",
+    "fact_id": null,
+    "type": "multi_evidence",
+    "question": "Which technician monitors reservoir station 053, and what is the final gate state for station 033?",
+    "answer": "LINK-4DSCVRUW|STATE-RNXY8QH4",
+    "fact_ids": [
+      "FACT-053",
+      "FACT-033"
+    ]
+  }
+]

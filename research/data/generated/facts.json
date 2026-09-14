@@ -1,0 +1,422 @@
+[
+  {
+    "fact_id": "FACT-001",
+    "type": "simple_fact",
+    "answer": "ANS-001-47YAYU",
+    "question": "Which unit is responsible for station 001?",
+    "text": "The maintenance record identifies the responsible unit for station 001 as ANS-001-47YAYU."
+  },
+  {
+    "fact_id": "FACT-002",
+    "type": "numeric_fact",
+    "answer": "NUM-QGGYS86C",
+    "question": "What is the calibrated flow reading for gauge 002?",
+    "text": "The calibrated flow reading for gauge 002 is NUM-QGGYS86C cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-003",
+    "type": "temporal_fact",
+    "answer": "DATE-MJUD2J87",
+    "question": "When is the scheduled inspection for sensor 003?",
+    "text": "The scheduled inspection for sensor 003 is on DATE-MJUD2J87."
+  },
+  {
+    "fact_id": "FACT-004",
+    "type": "entity_relation",
+    "answer": "LINK-YES8HCA2",
+    "question": "Which technician monitors reservoir station 004?",
+    "text": "Technician LINK-YES8HCA2 is assigned to monitor reservoir station 004."
+  },
+  {
+    "fact_id": "FACT-005",
+    "type": "state_update",
+    "answer": "STATE-54WW88S3",
+    "question": "What was the final gate state for station 005?",
+    "text": "The gate state changed from STATE-SKZKCZRS to STATE-54WW88S3 after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-006",
+    "type": "negation",
+    "answer": "RULE-YBEG55G7",
+    "question": "During the flood warning, is automatic restart at station 006 permitted?",
+    "text": "During the flood warning, automatic restart at station 006 is RULE-YBEG55G7; manual review is required."
+  },
+  {
+    "fact_id": "FACT-007",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-MZYTMRDV",
+    "question": "What downstream control mode belongs to channel 007?",
+    "text": "The report first names channel 007 as PAIR-EU3EZNFC and later states that its downstream control mode is PAIR-MZYTMRDV."
+  },
+  {
+    "fact_id": "FACT-008",
+    "type": "simple_fact",
+    "answer": "ANS-008-4BCT9W",
+    "question": "Which unit is responsible for station 008?",
+    "text": "The maintenance record identifies the responsible unit for station 008 as ANS-008-4BCT9W."
+  },
+  {
+    "fact_id": "FACT-009",
+    "type": "numeric_fact",
+    "answer": "NUM-F83CJETL",
+    "question": "What is the calibrated flow reading for gauge 009?",
+    "text": "The calibrated flow reading for gauge 009 is NUM-F83CJETL cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-010",
+    "type": "temporal_fact",
+    "answer": "DATE-WP5454N8",
+    "question": "When is the scheduled inspection for sensor 010?",
+    "text": "The scheduled inspection for sensor 010 is on DATE-WP5454N8."
+  },
+  {
+    "fact_id": "FACT-011",
+    "type": "entity_relation",
+    "answer": "LINK-NKYFJC2S",
+    "question": "Which technician monitors reservoir station 011?",
+    "text": "Technician LINK-NKYFJC2S is assigned to monitor reservoir station 011."
+  },
+  {
+    "fact_id": "FACT-012",
+    "type": "state_update",
+    "answer": "STATE-BM6TZRY6",
+    "question": "What was the final gate state for station 012?",
+    "text": "The gate state changed from STATE-PW7D52SJ to STATE-BM6TZRY6 after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-013",
+    "type": "negation",
+    "answer": "RULE-SFNDQ2B3",
+    "question": "During the flood warning, is automatic restart at station 013 permitted?",
+    "text": "During the flood warning, automatic restart at station 013 is RULE-SFNDQ2B3; manual review is required."
+  },
+  {
+    "fact_id": "FACT-014",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-MP4XTERV",
+    "question": "What downstream control mode belongs to channel 014?",
+    "text": "The report first names channel 014 as PAIR-66R54QX4 and later states that its downstream control mode is PAIR-MP4XTERV."
+  },
+  {
+    "fact_id": "FACT-015",
+    "type": "simple_fact",
+    "answer": "ANS-015-AQ5NVN",
+    "question": "Which unit is responsible for station 015?",
+    "text": "The maintenance record identifies the responsible unit for station 015 as ANS-015-AQ5NVN."
+  },
+  {
+    "fact_id": "FACT-016",
+    "type": "numeric_fact",
+    "answer": "NUM-MCPDVCRA",
+    "question": "What is the calibrated flow reading for gauge 016?",
+    "text": "The calibrated flow reading for gauge 016 is NUM-MCPDVCRA cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-017",
+    "type": "temporal_fact",
+    "answer": "DATE-2MRP9U74",
+    "question": "When is the scheduled inspection for sensor 017?",
+    "text": "The scheduled inspection for sensor 017 is on DATE-2MRP9U74."
+  },
+  {
+    "fact_id": "FACT-018",
+    "type": "entity_relation",
+    "answer": "LINK-UGUNMGU7",
+    "question": "Which technician monitors reservoir station 018?",
+    "text": "Technician LINK-UGUNMGU7 is assigned to monitor reservoir station 018."
+  },
+  {
+    "fact_id": "FACT-019",
+    "type": "state_update",
+    "answer": "STATE-RFXZV85T",
+    "question": "What was the final gate state for station 019?",
+    "text": "The gate state changed from STATE-ZB43UTUU to STATE-RFXZV85T after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-020",
+    "type": "negation",
+    "answer": "RULE-ABU8BHTF",
+    "question": "During the flood warning, is automatic restart at station 020 permitted?",
+    "text": "During the flood warning, automatic restart at station 020 is RULE-ABU8BHTF; manual review is required."
+  },
+  {
+    "fact_id": "FACT-021",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-FPZVZWA7",
+    "question": "What downstream control mode belongs to channel 021?",
+    "text": "The report first names channel 021 as PAIR-FUFC426W and later states that its downstream control mode is PAIR-FPZVZWA7."
+  },
+  {
+    "fact_id": "FACT-022",
+    "type": "simple_fact",
+    "answer": "ANS-022-2FD6TQ",
+    "question": "Which unit is responsible for station 022?",
+    "text": "The maintenance record identifies the responsible unit for station 022 as ANS-022-2FD6TQ."
+  },
+  {
+    "fact_id": "FACT-023",
+    "type": "numeric_fact",
+    "answer": "NUM-AMBZKEY5",
+    "question": "What is the calibrated flow reading for gauge 023?",
+    "text": "The calibrated flow reading for gauge 023 is NUM-AMBZKEY5 cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-024",
+    "type": "temporal_fact",
+    "answer": "DATE-6CJBGJB4",
+    "question": "When is the scheduled inspection for sensor 024?",
+    "text": "The scheduled inspection for sensor 024 is on DATE-6CJBGJB4."
+  },
+  {
+    "fact_id": "FACT-025",
+    "type": "entity_relation",
+    "answer": "LINK-WXLRDGVK",
+    "question": "Which technician monitors reservoir station 025?",
+    "text": "Technician LINK-WXLRDGVK is assigned to monitor reservoir station 025."
+  },
+  {
+    "fact_id": "FACT-026",
+    "type": "state_update",
+    "answer": "STATE-8VBBBVU5",
+    "question": "What was the final gate state for station 026?",
+    "text": "The gate state changed from STATE-VKDBATKJ to STATE-8VBBBVU5 after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-027",
+    "type": "negation",
+    "answer": "RULE-TWTM4VKF",
+    "question": "During the flood warning, is automatic restart at station 027 permitted?",
+    "text": "During the flood warning, automatic restart at station 027 is RULE-TWTM4VKF; manual review is required."
+  },
+  {
+    "fact_id": "FACT-028",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-C5RE7EVM",
+    "question": "What downstream control mode belongs to channel 028?",
+    "text": "The report first names channel 028 as PAIR-SHVBSJSC and later states that its downstream control mode is PAIR-C5RE7EVM."
+  },
+  {
+    "fact_id": "FACT-029",
+    "type": "simple_fact",
+    "answer": "ANS-029-P24JEC",
+    "question": "Which unit is responsible for station 029?",
+    "text": "The maintenance record identifies the responsible unit for station 029 as ANS-029-P24JEC."
+  },
+  {
+    "fact_id": "FACT-030",
+    "type": "numeric_fact",
+    "answer": "NUM-UX388PD5",
+    "question": "What is the calibrated flow reading for gauge 030?",
+    "text": "The calibrated flow reading for gauge 030 is NUM-UX388PD5 cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-031",
+    "type": "temporal_fact",
+    "answer": "DATE-EEQGBP8Y",
+    "question": "When is the scheduled inspection for sensor 031?",
+    "text": "The scheduled inspection for sensor 031 is on DATE-EEQGBP8Y."
+  },
+  {
+    "fact_id": "FACT-032",
+    "type": "entity_relation",
+    "answer": "LINK-NMGWJXT5",
+    "question": "Which technician monitors reservoir station 032?",
+    "text": "Technician LINK-NMGWJXT5 is assigned to monitor reservoir station 032."
+  },
+  {
+    "fact_id": "FACT-033",
+    "type": "state_update",
+    "answer": "STATE-RNXY8QH4",
+    "question": "What was the final gate state for station 033?",
+    "text": "The gate state changed from STATE-HMUSQUGG to STATE-RNXY8QH4 after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-034",
+    "type": "negation",
+    "answer": "RULE-8AGXS3TY",
+    "question": "During the flood warning, is automatic restart at station 034 permitted?",
+    "text": "During the flood warning, automatic restart at station 034 is RULE-8AGXS3TY; manual review is required."
+  },
+  {
+    "fact_id": "FACT-035",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-P77LWDJX",
+    "question": "What downstream control mode belongs to channel 035?",
+    "text": "The report first names channel 035 as PAIR-FJ99RUTC and later states that its downstream control mode is PAIR-P77LWDJX."
+  },
+  {
+    "fact_id": "FACT-036",
+    "type": "simple_fact",
+    "answer": "ANS-036-ZSHRE4",
+    "question": "Which unit is responsible for station 036?",
+    "text": "The maintenance record identifies the responsible unit for station 036 as ANS-036-ZSHRE4."
+  },
+  {
+    "fact_id": "FACT-037",
+    "type": "numeric_fact",
+    "answer": "NUM-RUJVZSLB",
+    "question": "What is the calibrated flow reading for gauge 037?",
+    "text": "The calibrated flow reading for gauge 037 is NUM-RUJVZSLB cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-038",
+    "type": "temporal_fact",
+    "answer": "DATE-9DNQDMB4",
+    "question": "When is the scheduled inspection for sensor 038?",
+    "text": "The scheduled inspection for sensor 038 is on DATE-9DNQDMB4."
+  },
+  {
+    "fact_id": "FACT-039",
+    "type": "entity_relation",
+    "answer": "LINK-37YRDSJP",
+    "question": "Which technician monitors reservoir station 039?",
+    "text": "Technician LINK-37YRDSJP is assigned to monitor reservoir station 039."
+  },
+  {
+    "fact_id": "FACT-040",
+    "type": "state_update",
+    "answer": "STATE-BBJVS9C4",
+    "question": "What was the final gate state for station 040?",
+    "text": "The gate state changed from STATE-U8PBBFLW to STATE-BBJVS9C4 after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-041",
+    "type": "negation",
+    "answer": "RULE-6YRZ5UNW",
+    "question": "During the flood warning, is automatic restart at station 041 permitted?",
+    "text": "During the flood warning, automatic restart at station 041 is RULE-6YRZ5UNW; manual review is required."
+  },
+  {
+    "fact_id": "FACT-042",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-F6M4AP2D",
+    "question": "What downstream control mode belongs to channel 042?",
+    "text": "The report first names channel 042 as PAIR-4SYZ2AUV and later states that its downstream control mode is PAIR-F6M4AP2D."
+  },
+  {
+    "fact_id": "FACT-043",
+    "type": "simple_fact",
+    "answer": "ANS-043-XC3Q8F",
+    "question": "Which unit is responsible for station 043?",
+    "text": "The maintenance record identifies the responsible unit for station 043 as ANS-043-XC3Q8F."
+  },
+  {
+    "fact_id": "FACT-044",
+    "type": "numeric_fact",
+    "answer": "NUM-QSDX9NNJ",
+    "question": "What is the calibrated flow reading for gauge 044?",
+    "text": "The calibrated flow reading for gauge 044 is NUM-QSDX9NNJ cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-045",
+    "type": "temporal_fact",
+    "answer": "DATE-6S25CYWZ",
+    "question": "When is the scheduled inspection for sensor 045?",
+    "text": "The scheduled inspection for sensor 045 is on DATE-6S25CYWZ."
+  },
+  {
+    "fact_id": "FACT-046",
+    "type": "entity_relation",
+    "answer": "LINK-2G549ZDQ",
+    "question": "Which technician monitors reservoir station 046?",
+    "text": "Technician LINK-2G549ZDQ is assigned to monitor reservoir station 046."
+  },
+  {
+    "fact_id": "FACT-047",
+    "type": "state_update",
+    "answer": "STATE-PFRLKE6V",
+    "question": "What was the final gate state for station 047?",
+    "text": "The gate state changed from STATE-WPJEQH3T to STATE-PFRLKE6V after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-048",
+    "type": "negation",
+    "answer": "RULE-63J7CKQL",
+    "question": "During the flood warning, is automatic restart at station 048 permitted?",
+    "text": "During the flood warning, automatic restart at station 048 is RULE-63J7CKQL; manual review is required."
+  },
+  {
+    "fact_id": "FACT-049",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-JZ25XQZS",
+    "question": "What downstream control mode belongs to channel 049?",
+    "text": "The report first names channel 049 as PAIR-MBC7WNDJ and later states that its downstream control mode is PAIR-JZ25XQZS."
+  },
+  {
+    "fact_id": "FACT-050",
+    "type": "simple_fact",
+    "answer": "ANS-050-5NQGBY",
+    "question": "Which unit is responsible for station 050?",
+    "text": "The maintenance record identifies the responsible unit for station 050 as ANS-050-5NQGBY."
+  },
+  {
+    "fact_id": "FACT-051",
+    "type": "numeric_fact",
+    "answer": "NUM-J6TJM4TX",
+    "question": "What is the calibrated flow reading for gauge 051?",
+    "text": "The calibrated flow reading for gauge 051 is NUM-J6TJM4TX cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-052",
+    "type": "temporal_fact",
+    "answer": "DATE-T8GGYZ5N",
+    "question": "When is the scheduled inspection for sensor 052?",
+    "text": "The scheduled inspection for sensor 052 is on DATE-T8GGYZ5N."
+  },
+  {
+    "fact_id": "FACT-053",
+    "type": "entity_relation",
+    "answer": "LINK-4DSCVRUW",
+    "question": "Which technician monitors reservoir station 053?",
+    "text": "Technician LINK-4DSCVRUW is assigned to monitor reservoir station 053."
+  },
+  {
+    "fact_id": "FACT-054",
+    "type": "state_update",
+    "answer": "STATE-EQC5ZTG7",
+    "question": "What was the final gate state for station 054?",
+    "text": "The gate state changed from STATE-NJ6E3N5C to STATE-EQC5ZTG7 after the evening inspection."
+  },
+  {
+    "fact_id": "FACT-055",
+    "type": "negation",
+    "answer": "RULE-KLY4NSW9",
+    "question": "During the flood warning, is automatic restart at station 055 permitted?",
+    "text": "During the flood warning, automatic restart at station 055 is RULE-KLY4NSW9; manual review is required."
+  },
+  {
+    "fact_id": "FACT-056",
+    "type": "cross_chunk_relation",
+    "answer": "PAIR-B5932U3U",
+    "question": "What downstream control mode belongs to channel 056?",
+    "text": "The report first names channel 056 as PAIR-LNB82UDP and later states that its downstream control mode is PAIR-B5932U3U."
+  },
+  {
+    "fact_id": "FACT-057",
+    "type": "simple_fact",
+    "answer": "ANS-057-7ZMZQ3",
+    "question": "Which unit is responsible for station 057?",
+    "text": "The maintenance record identifies the responsible unit for station 057 as ANS-057-7ZMZQ3."
+  },
+  {
+    "fact_id": "FACT-058",
+    "type": "numeric_fact",
+    "answer": "NUM-7ANCD5ZX",
+    "question": "What is the calibrated flow reading for gauge 058?",
+    "text": "The calibrated flow reading for gauge 058 is NUM-7ANCD5ZX cubic meters per hour."
+  },
+  {
+    "fact_id": "FACT-059",
+    "type": "temporal_fact",
+    "answer": "DATE-347BLDSW",
+    "question": "When is the scheduled inspection for sensor 059?",
+    "text": "The scheduled inspection for sensor 059 is on DATE-347BLDSW."
+  },
+  {
+    "fact_id": "FACT-060",
+    "type": "entity_relation",
+    "answer": "LINK-SHTTBJQC",
+    "question": "Which technician monitors reservoir station 060?",
+    "text": "Technician LINK-SHTTBJQC is assigned to monitor reservoir station 060."
+  }
+]

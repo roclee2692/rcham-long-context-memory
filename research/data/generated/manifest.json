@@ -1,0 +1,27 @@
+{
+  "seed": 20260914,
+  "facts": 60,
+  "questions": 8,
+  "document_chars": 56879,
+  "document_proxy_tokens": 7113,
+  "fact_types": [
+    "cross_chunk_relation",
+    "entity_relation",
+    "negation",
+    "numeric_fact",
+    "simple_fact",
+    "state_update",
+    "temporal_fact"
+  ],
+  "question_ids": [
+    "Q-01",
+    "Q-02",
+    "Q-03",
+    "Q-04",
+    "Q-05",
+    "Q-06",
+    "Q-07",
+    "Q-08"
+  ],
+  "generation": "Deterministic templates plus seeded filler; no language model used."
+}

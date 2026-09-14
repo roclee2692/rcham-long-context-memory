@@ -1,0 +1,14 @@
+{
+  "seed": 20260914,
+  "model": "ornith-agent:latest",
+  "temperature": 0.0,
+  "num_ctx": 16384,
+  "facts": 60,
+  "filler_words_per_fact": 48,
+  "questions": 8,
+  "chunk_proxy_tokens": 1200,
+  "hierarchy_group": 4,
+  "retrieval_top_chunks": 2,
+  "ollama_timeout_seconds": 180,
+  "proxy_token_definition": "Chinese characters, alphanumeric runs, and non-whitespace punctuation counted as units; not the model tokenizer."
+}
