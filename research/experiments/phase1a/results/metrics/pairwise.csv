@@ -1,0 +1,4 @@
+left,right,n,delta_useful_memory_retention,delta_q2_target_survival,delta_q3_target_survival,delta_q2_cold_blocks,delta_q3_cold_blocks,delta_total_cold_reads,delta_churn,delta_promotion_regret
+oracle_utility,retrieval_count,486,0.041667,0.166667,0.0,-0.166667,0.166667,0,-2.333333,-3.777778
+oracle_utility,cold_raw_fallback_only,486,0.5,0.666667,0.833333,-0.666667,-0.833333,-1.5,2,0.166667
+oracle_utility,perfect_routing_no_promotion,486,0.5,0.666667,0.833333,-0.666667,-0.833333,-1.5,2,0.166667

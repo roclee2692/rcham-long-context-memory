@@ -33,3 +33,23 @@
 - Result：代码静态编译通过；当前机器缺少 PyTorch、Transformers、Triton、FlashAttention 和 CUDA，也没有对应 checkpoint，因此没有伪造性能结果。
 - Interpretation：Phase 0 的代码入口已确认，但真实运行被硬件和 checkpoint 闸门阻塞。
 - Next step：获得 NVIDIA CUDA 环境和方法对应权重后，运行统一 harness；在此之前只保留代码审计结论。
+
+## 2026-09-15 · PHASE1A-ORACLE-CONTROLLER-001
+
+- Hypothesis：q1 首次冷读取之后，只有在 q1 完成后才得到的 oracle utility 才能促升 M；在相同 Tier 1 预算和后续写入压力下，促升应改善 q2/q3 的后续保留并减少 cold fallback。它不能改善 q1，也不能预测从未被使用过的相关 block。
+- Configuration：确定性 synthetic temporal episodes；seed `[7, 11, 19]`；Tier 1 capacity `[8, 16, 32]`；post-q1 pressure `[2x, 4x, 8x]`；delay `short/medium/long`；六种场景；六种 controller。精确 evidence IDs 作为共享 perfect-routing 输入；Tier 2 compressed index 和 Tier 3 raw archive 只做生命周期模拟。没有 Transformer、GPU、模型下载或收费 API。
+- Result：486 episodes、2916 runs。Oracle utility 平均 useful-memory retention `0.500`，q2/q3 M survival `0.667/0.833`，total cold reads `2.167`；retrieval-count 为 `0.458`、`0.500/0.833`、`2.167`；cold-only 与 perfect-routing/no-promotion 为 `0.000`、`0/0`、`3.667`。utility 在 useless-distractor 场景避免了 retrieval-count 的访问次数误导，但在 related/competing 场景不能预知 q2 才首次出现的相关证据；decay/cooldown 当前参数反而降低 retention。
+- Interpretation：`CONDITIONAL GO`，仅说明 post-use lifecycle controller 值得做更现实的下一轮验证；不支持“解决 future-query-unknown”，也不支持 latency、Transformer 或 GPU 优势。当前创新性仍受 prior-art 风险约束，不能据此宣称新颖架构。
+- Next step：停止在 Phase 1A；不得进入 Phase 1B。下一轮若获准，应加入 imperfect routing、deployable utility proxy 和真实 memory sequence，并重复 prior-art gate 后再决定是否继续。
+
+失败结果和 raw traces 保留在 `research/experiments/phase1a/results/`，没有覆盖早期自然语言压缩 Pilot。
+
+## 2026-09-15 · ARCH-LANDSCAPE-AUDIT-001
+
+- Hypothesis：候选 RCHAM 架构由许多已有组件组成；完整 prior-art audit 可能把“新架构”收窄为少数尚未统一的接口问题。
+- Configuration：核对 20 个组件；使用正式会议/期刊页面、DOI、arXiv、作者仓库和可查独立复现；扩展到 ARC、Belady、working-set、reuse-distance、learning-augmented caching、tiered storage、SCBench 等传统系统证据。不启动模型、GPU、controller 或 Phase 1B。
+- Result：local/sparse attention、历史/KV 压缩、raw fallback、传统 replacement/offload 和基础 benchmark 已成熟；query-agnostic compression、hierarchy/routing、utility、semantic memory、dynamic tiering 和 end-to-end integration 高度活跃且拥挤。公开 failure mode 包括重复压缩、immediate compaction、past-attention 与 future utility 混淆、首次未知 query、层级 route miss、I/O 主导和外部 memory 与内部 KV 错位。
+- Interpretation：不能把“压缩 + 层级 + 召回 + 促升 + 分层存储”的拼装写成全新架构。当前唯一保留的窄问题是：内部 Transformer/KV 是否存在一个严格无未来泄漏的 `q1 cold fallback → observed utility → q2/q3 reuse → promotion/demotion/decay` 闭环，并且在相同质量、存储和 I/O 预算下有独立收益。该结论是 provisional，不能写成“没人做过”。
+- Next step：停止。若未来重新提出实验，先重新核对 HeteroCache、RMM、KVP、KVzip 及新增工作，再固定 strongest baselines、生命周期 benchmark 和真实 I/O cost model。
+
+审计矩阵、报告和开放问题图分别位于 `research/literature/architecture_landscape_matrix.csv`、`research/reports/architecture_landscape_audit.md`、`research/design/open_problem_map.md`。

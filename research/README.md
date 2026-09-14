@@ -1,6 +1,6 @@
 # RCHAM：检索反馈式层级注意力记忆
 
-本目录是 RCHAM 研究的独立实验区。当前阶段是 **Phase 0.5：文献标准化与实验语义冻结**。研究问题已经从“压缩能不能做”收敛为：第一次需求由 cold/raw fallback 处理；记忆被召回且被证明有用后，是否应该提升它的保存精度和 attention 可访问性；长期不用则降级。
+本目录是 RCHAM 研究的独立实验区。**Phase 0.5 已完成，Phase 1A Oracle Controller Pilot 已完成并停止在闸门处。**研究问题已经从“压缩能不能做”收敛为：第一次需求由 cold/raw fallback 处理；记忆被召回且被证明有用后，是否应该提升它的保存精度和 attention 可访问性；长期不用则降级。
 
 本阶段不实现层级检索树、局部 Transformer、快照重建、知识图谱、CUDA/Triton 或大模型训练。
 
@@ -17,7 +17,7 @@
 → 自动指标、原始输出和失败案例
 ```
 
-当前 Phase 0.5 不运行 GPU 方法、不下载新模型、不调用收费 API。环境限制和已审计的官方仓库见 `phase0/environment_gate.md`；语义冻结报告见 `reports/phase0_5_review.md`。
+当前没有运行 GPU 方法、没有下载新模型、没有调用收费 API。Phase 1A 只模拟三级 tier 生命周期，结果和停止判断见 `reports/phase1a_pilot_report.md`；环境限制和已审计的官方仓库见 `phase0/environment_gate.md`；语义冻结报告见 `reports/phase0_5_review.md`。
 
 ## 目录
 
@@ -34,6 +34,7 @@
 - `literature/`：主论文证据、最近工作矩阵和复现警告
 - `design/`：RCHAM v0.2 架构、创新边界和假设
 - `experiments/phase1_protocol.md`：下一阶段控制器模拟协议（当前不执行）
+- `experiments/phase1a/`：已完成的 oracle controller 时间序列 pilot、测试、raw traces 和指标
 - `RESEARCH_LOG.md`：每次实验记录
 
 ## 复现

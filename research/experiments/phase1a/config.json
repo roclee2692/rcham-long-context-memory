@@ -1,0 +1,30 @@
+{
+  "seed_list": [7, 11, 19],
+  "capacities": [8, 16, 32],
+  "pressure_factors": [2, 4, 8],
+  "delays": ["short", "medium", "long"],
+  "scenarios": [
+    "repeated_useful",
+    "related_nonidentical",
+    "useless_distractor",
+    "obsolete_target",
+    "delayed_second_use",
+    "competing_useful"
+  ],
+  "policies": [
+    "static",
+    "retrieval_count",
+    "oracle_utility",
+    "oracle_utility_decay_cooldown",
+    "cold_raw_fallback_only",
+    "perfect_routing_no_promotion"
+  ],
+  "decay_factor": 0.97,
+  "utility_decay_threshold": 0.10,
+  "cooldown_steps": 3,
+  "block_sizes": {
+    "hot_bytes": 128,
+    "compressed_bytes": 16,
+    "raw_bytes": 256
+  }
+}

@@ -1,6 +1,11 @@
 # Phase 1：RCHAM 时间序列控制器模拟协议
 
-状态：语义已冻结，等待 Phase 0.5 人工检查；当前不执行。
+状态：Phase 0.5 已通过人工检查；Phase 1A oracle controller pilot 已执行并停止。Phase 1B 当前不执行。
+
+Phase 1A 的实际实现、配置、测试、raw traces 和指标位于
+`research/experiments/phase1a/`，阶段报告位于
+`research/reports/phase1a_pilot_report.md`。本文件继续保留完整的后续协议，
+不代表已经开始真实 Transformer 或 Phase 1B。
 
 ## 研究对象
 

@@ -1,0 +1,14 @@
+{
+  "full_outputs_are_local_artifacts": true,
+  "files": {
+    "episodes.json": {
+      "bytes": 76709140,
+      "sha256": "89830989f3b480874f910a8bb4a572e79de8b69b5ebdc00309fa91685d70924e"
+    },
+    "traces.jsonl": {
+      "bytes": 551335260,
+      "sha256": "f365ecd87eabe5c575895c03d3b333b707c8f5624206c27948066fb157caee4d"
+    }
+  },
+  "sample_file": "traces_sample.jsonl"
+}
