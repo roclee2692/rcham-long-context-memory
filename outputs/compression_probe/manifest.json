@@ -1,0 +1,23 @@
+{
+  "snapshot_date": "2026-09-14",
+  "verified_at": "2026-09-14T21:11:33+08:00",
+  "architecture_version": "v0.1",
+  "sha256": {
+    "README.md": "8763a667d8534a20f288945502749136201ef1983402bfdf4447a1a60800c7eb",
+    "error_trace.json": "47dfab9b54f8f2e3ce69166db13aa1b7ba79a0239d0b5640da0129bea5a5cd77",
+    "per_history_index.csv": "4710e7d624ce5dfce9b03abd71b67cd7453a5ccf97cd6ab164f2d45ef45f5c76",
+    "per_query.csv": "68cee19697191c54489ef2a158de7c092333c5bf79381e8c849305d40a0d3bb1",
+    "probe.py": "2d6510413f8dd64dd03d566b97a7022648ef3972eaa53a53e62ee96493f6c6b1",
+    "report.json": "f4b98246ae267862c4f003961c0497d3d9abc4dd2a63b4c3daf752f8431fd296",
+    "summary.csv": "4a4059f9a5e932e5ecb5d40f52a625dbb3acdba1150d6e41a72f9fa2d9d48782"
+  },
+  "verification": {
+    "reproduced_method_query_rows": 11340,
+    "per_query_non_timing_fields_identical": true,
+    "summary_non_timing_fields_identical": true,
+    "bootstrap_identical": true,
+    "failure_trace_identical": true,
+    "timings": "Excluded from equality checks: runtime dependent. Original archived measurements preserved."
+  },
+  "scope": "Untrained synthetic vector navigation; no LLM compression or full Attention replacement experiment."
+}

@@ -1,0 +1,2 @@
+# Runtime used for the archived mechanical probe. No model download required.
+numpy==2.4.2

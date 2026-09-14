@@ -1,0 +1,2 @@
+# Preserve the exact bytes of the archived CSV results, including CRLF.
+outputs/compression_probe/*.csv -text whitespace=cr-at-eol
