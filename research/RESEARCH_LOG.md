@@ -9,3 +9,11 @@
 - Next step：停止在 Phase 1 Pilot 闸门；若继续，先扩展真实化数据、实际 tokenizer 和带 child pointers 的独立层级路由。
 
 失败结果必须保留在 `results/raw/`，不覆盖历史输出。
+
+## 2026-09-14 · PHASE0-CODE-AUDIT-001
+
+- Hypothesis：已有压缩/长上下文方法可以在同一 benchmark 上直接做公平比较。
+- Configuration：浅克隆 AutoCompressor、ICAE、Activation Beacon、Landmark Attention 官方代码；记录仓库 commit 和原生运行依赖。
+- Result：代码静态编译通过；当前机器缺少 PyTorch、Transformers、Triton、FlashAttention 和 CUDA，也没有对应 checkpoint，因此没有伪造性能结果。
+- Interpretation：Phase 0 的代码入口已确认，但真实运行被硬件和 checkpoint 闸门阻塞。
+- Next step：获得 NVIDIA CUDA 环境和方法对应权重后，运行统一 harness；在此之前只保留代码审计结论。
