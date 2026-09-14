@@ -1,21 +1,21 @@
-# Phase 0：文献与现成实现验证
+# Phase 0：文献、代码与现成实现验证
 
 日期：2026-09-14
 
-Phase 0 的目的不是重新证明“压缩可以存在”，而是把已有方法放到同一套可复现协议中，确认它们在当前硬件上能否真实运行，以及论文结论哪些可以直接比较。
+Phase 0 的目的不是重新证明“压缩可以存在”，而是确认 RCHAM 的最近邻工作、论文证据和复现边界。当前先完成文献/代码审计；只有获得合适 CUDA 环境和用户批准后，才会把官方方法放到同一套可复现协议中运行。
 
 当前状态：完成官方代码浅克隆和运行条件审计；尚未下载任何模型权重，尚未产生方法性能结果。
 
 ## 方法边界
 
-计划直接验证：
+已核对或计划核对：
 
 - AutoCompressor
 - ICAE
 - Activation Beacon
 - Landmark Attention
 
-Infini-attention 和 Compressive Transformer 先作为机制和失败模式参考。它们的官方或作者代码通常需要重新训练、特定基座模型或 CUDA 环境，不能把一个非官方 CPU 实现当成论文复现。
+Infini-attention、Compressive Transformer、H²MT、HeteroCache、R³Mem、RecMem、MemoryBank 和 KVzip 也纳入机制与创新边界审计。它们的官方或作者代码通常需要重新训练、特定基座模型或 CUDA 环境，不能把一个非官方 CPU 实现当成论文复现。
 
 ## 共同 benchmark
 
@@ -38,6 +38,6 @@ Infini-attention 和 Compressive Transformer 先作为机制和失败模式参�
 
 需要继续真实运行时，最小可行路线是准备带 NVIDIA CUDA 的机器，并分别获得对应 checkpoint。任何超过 5GB 的模型下载或远程 GPU 运行都要单独记录成本和环境。
 
-详细入口、版本和阻塞见 `method_matrix.md` 与 `environment_gate.md`。
+详细入口、版本和阻塞见 `method_matrix.md`、`environment_gate.md` 和 `../literature/reproduction_warnings.md`。新的最近工作矩阵在 `../literature/closest_work_matrix.csv`。
 
 论文可信度、训练依赖、评测泄漏和独立复现风险见 `paper_forensics_report.md`。该报告使用 paper-forensics Skill 的 G0–G4 证据等级；它不会把不可复现直接称为造假。

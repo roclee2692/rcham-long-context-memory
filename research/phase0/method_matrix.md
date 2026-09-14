@@ -24,4 +24,4 @@ AutoCompressor 的 README 明确要求 bfloat16 + CUDA + FlashAttention，并从
 - AutoCompressor/ICAE 的表示是模型输入侧的 soft representation，Activation Beacon/Landmark 主要操作每层 activation/KV；压缩率分母不同。
 - latency 必须固定硬件、batch、prompt length、生成长度和 kernel；Python 原型时间不能代替 fused GPU kernel。
 
-因此 Phase 0 的第一张表应当是“相同 benchmark 上的可运行结果”，第二张表才是“论文原始结果摘要”，两者不能混写。
+因此未来若获得 CUDA 环境，第一张表才会是“相同 benchmark 上的可运行结果”，第二张表才是“论文原始结果摘要”，两者不能混写。本轮 Phase 0 不执行这些运行，只记录代码入口和复现闸门；RCHAM 的机制边界见 `../design/novelty_boundary.md`。
