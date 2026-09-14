@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520">
+<rect width="100%" height="100%" fill="#f7f8fb"/>
+<text x="90" y="35" font-size="24" font-family="sans-serif" font-weight="bold">Compression ratio vs fact retention</text>
+<line x1="90" y1="70" x2="90" y2="440" stroke="#29364d"/>
+<line x1="90" y1="440" x2="870" y2="440" stroke="#29364d"/>
+<line x1="90" y1="440.0" x2="870" y2="440.0" stroke="#d9dee8"/>
+<text x="18" y="445.0" font-size="14" font-family="sans-serif">0%</text>
+<line x1="90" y1="347.5" x2="870" y2="347.5" stroke="#d9dee8"/>
+<text x="18" y="352.5" font-size="14" font-family="sans-serif">25%</text>
+<line x1="90" y1="255.0" x2="870" y2="255.0" stroke="#d9dee8"/>
+<text x="18" y="260.0" font-size="14" font-family="sans-serif">50%</text>
+<line x1="90" y1="162.5" x2="870" y2="162.5" stroke="#d9dee8"/>
+<text x="18" y="167.5" font-size="14" font-family="sans-serif">75%</text>
+<line x1="90" y1="70.0" x2="870" y2="70.0" stroke="#d9dee8"/>
+<text x="18" y="75.0" font-size="14" font-family="sans-serif">100%</text>
+<text x="370" y="500" font-size="16" font-family="sans-serif">compressed / original proxy tokens</text>
+<text x="14" y="295" transform="rotate(-90 14 295)" font-size="16" font-family="sans-serif">fact retention</text>
+<circle cx="870.0" cy="70.0" r="6" fill="hsl(0,55%,42%)"/>
+<text x="878.0" y="62.0" font-size="13" font-family="sans-serif" fill="hsl(0,55%,42%)">raw_context</text>
+<circle cx="102.67471958584987" cy="347.5" r="6" fill="hsl(65,55%,42%)"/>
+<text x="110.67471958584987" y="339.5" font-size="13" font-family="sans-serif" fill="hsl(65,55%,42%)">one_shot_summary</text>
+<circle cx="165.26315789473682" cy="162.5" r="6" fill="hsl(130,55%,42%)"/>
+<text x="173.26315789473682" y="154.5" font-size="13" font-family="sans-serif" fill="hsl(130,55%,42%)">chunk_summary</text>
+<circle cx="90.0" cy="393.75" r="6" fill="hsl(195,55%,42%)"/>
+<text x="98.0" y="385.75" font-size="13" font-family="sans-serif" fill="hsl(195,55%,42%)">hierarchical_summary</text>
+</svg>

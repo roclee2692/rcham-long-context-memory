@@ -1,0 +1,12 @@
+{
+  "experiment_id": "PHASE1-PILOT-001",
+  "model": "ornith-agent:latest",
+  "temperature": 0.0,
+  "questions": 8,
+  "answer_calls": 46,
+  "compression_calls": 10,
+  "compression_question_blind": true,
+  "document_proxy_tokens": 7113,
+  "started_at_local": "2026-09-14 22:07:27 +0800",
+  "note": "Pilot only; multi-evidence route stage intentionally skipped rather than silently mis-scored."
+}
