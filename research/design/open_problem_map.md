@@ -129,3 +129,18 @@ memory pressure and I/O scheduling
 - 不把论文报告的 compression ratio、单次 latency 或单一 NIAH 分数相加为端到端结论。
 
 本图的结论是：宽泛的 RCHAM 架构已经高度由既有组件覆盖；若未来继续，只应围绕上述接口、证据链和失败区间提出窄而可证伪的问题。
+
+## Phase 0-B 收窄后的缺口
+
+EVICPRESS 已经在 context-level 服务系统中展示了在线质量复核后重新选择压缩、驱逐和 GPU/CPU/SSD tier；AdaptCache、IMPRESS、Strata 也覆盖了预测或历史效用驱动的系统级放置。因此“post-use resource reallocation”整体不再是开放问题。
+
+目前保留下来的最小接口问题是：
+
+```text
+q1 cold/raw read
+→ 将质量变化归因到 exact internal KV token/block/evidence identity
+→ 在 q2/q3 前改变该 identity 的 precision/residency/tier
+→ 在 t7 对长期不用的 identity 做可验证 demotion/decay
+```
+
+这不是一个已证明的新 controller，也可能只是工程整合。必须先解决两个公开 failure mode：context-level quality/drift 信号无法定位具体有用 block；RMM 的 demonstrated utility 在自然/streaming workload 上可能退化为普通 attention。没有 exact attribution、统一 I/O 预算和 q1/q2/q3 benchmark 时，不应宣称 RCHAM 新颖。

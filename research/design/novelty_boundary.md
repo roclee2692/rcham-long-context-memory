@@ -63,3 +63,15 @@ first cold retrieval
 - 如果 utility 只能利用未来问题/gold answer，不能在读取后观测，研究降级为 oracle 上界分析。
 - 如果 utility promotion 只提升 `q1`（第一次需求）而没有后续 query，不能声称 promotion 有价值。
 - 如果相同预算下没有稳定后续 retention 优势，不能用更大模型、更高存储或更宽候选集掩盖结论。
+
+## Phase 0-B 审计后的必要收窄
+
+EVICPRESS 已经覆盖 context-level 的在线质量复核、压缩/驱逐/设备重分配和真实 I/O；AdaptCache、IMPRESS、Strata 已覆盖预测或历史效用的系统级 tier。因而不能再把“观察后资源重分配”写成未解决问题。
+
+当前最多只能保留下面的窄问题：
+
+> **当 q1 通过 cold/raw fallback 读取历史后，能否把 q1 的质量变化归因到 exact internal KV token/block/evidence identity，并在相同 quality/bytes/I/O budget 下，于 q2/q3 前改变该 identity 的 precision 或 hardware residency，再对长期不用的 identity 执行可验证 demotion？**
+
+这条陈述仍有较高 engineering-integration risk。context-level quality drift、attention drift、retrieval count 和离线 future-utility prediction 都不能直接证明 exact attribution。RMM 的自然文本/独立 streaming 对照还提示：即使 post-use signal 存在，也可能退化为普通 attention，不能预设部署收益。
+
+因此本文件的状态从“provisional research gap”改为 **narrow, unconfirmed interface gap**：只有在下一阶段先确认这一具体 failure mode，并用统一生命周期协议测出独立收益，才有资格讨论算法或论文贡献。

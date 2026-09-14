@@ -53,3 +53,11 @@ Oracle utility 使用 gold answer 或 counterfactual loss，只能作为机制�
 ## 未确认候选
 
 WhenLoss、MARCH、CueMem、Dynamic Hierarchical Sparse Attention 和若干 2026 learned KV policy 的公开主来源尚未在本轮全部固定。它们在获得一手论文、版本、代码和实验配置前，只能放在待核查列表，不能用来支持“已有完全重合”的结论。
+
+## Phase 0-B 新增边界
+
+- EVICPRESS 是重要的 broad counterexample：它在 context-level serving system 上做在线质量复核和 GPU/CPU/SSD 资源重分配，并测量 I/O/TTFT。但其质量指标是与 uncompressed prefill answer 的 context-level 相似度，不是某个内部 token/block 的 evidence recall 或 answer flip；cache miss 主要是 recomputation。不能把它直接记为“完整 internal KV lifecycle”。
+- AdaptCache 的 utility 主要来自历史命中频率和离线质量-延迟曲线；这是 predicted/historical utility，不是 q1 完成后可归因的 actual utility。其 Poisson arrival 和系统级 tier 结果不能替代 q1/q2/q3 时间协议。
+- IMPRESS、Strata 进一步证明 GPU/CPU/disk tier 和 repeated context I/O 已是成熟或活跃的 systems 组件；它们没有给出 post-use exact evidence attribution 与显式 inactivity decay。
+- RMM 的 demonstrated utility 不能自动当作部署优势：其自然文本/独立 streaming multi-turn 对照显示 utility 可能退化为累计 attention。后续必须把人工构造的 endogenous-reuse 和自然 workload 分开报告。
+- 因此本轮缺口只能写成粒度和因果接口缺口：`q1 cold/raw read → exact KV/evidence attribution → q2/q3 resource change → t7 demotion`。不能写成“观察后资源重分配从未被研究”。

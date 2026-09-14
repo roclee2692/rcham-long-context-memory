@@ -53,3 +53,13 @@
 - Next step：停止。若未来重新提出实验，先重新核对 HeteroCache、RMM、KVP、KVzip 及新增工作，再固定 strongest baselines、生命周期 benchmark 和真实 I/O cost model。
 
 审计矩阵、报告和开放问题图分别位于 `research/literature/architecture_landscape_matrix.csv`、`research/reports/architecture_landscape_audit.md`、`research/design/open_problem_map.md`。
+
+## 2026-09-15 · PHASE0-B-LIFECYCLE-GAP-001
+
+- Hypothesis：Architecture-wide Audit 中保留的“post-cold-read internal KV lifecycle”可能仍是缺口，但必须先排除 context-level utility/tiering、lagged eviction、predicted utility 和 raw-block fallback 已经分别覆盖它的情况。
+- Configuration：统一 t0–t7 时间轴；主核对 HeteroCache、RMM/Eviction as Estimation、KVP/Learning to Evict、KVzip、Landmark Attention，并扩展 EVICPRESS、AdaptCache、IMPRESS、Strata。只使用正式出版页面、arXiv primary source、作者仓库和公开系统描述；没有训练、GPU 或实验。
+- Result：Landmark 覆盖 q1 landmark→raw block；RMM 覆盖 token-level lagged demonstrated-utility retention；KVP 覆盖 offline predicted future utility；KVzip 覆盖 query-agnostic compression/reuse；HeteroCache 覆盖 internal heterogeneous tier 和 attention-drift retrieval；EVICPRESS 已在 context-level 服务系统实现 observed-quality reprofile→compression/eviction/device reallocation 并计入 GPU/CPU/SSD I/O；AdaptCache/IMPRESS/Strata 覆盖预测或系统级 tier。
+- Interpretation：不能再声称“post-use resource reallocation 没人做过”。当前只能保留窄的、未确认完整重合的接口：`q1 cold/raw read → exact internal KV/evidence attribution → q2/q3 前 precision/residency/tier change → t7 demotion/decay`。最具体的 failure mode 是 context-level quality/drift 信号无法归因到具体 useful block；RMM 的自然/streaming workload 还显示 post-use utility 可能退化为普通 attention。
+- Next step：停止。只有人工确认该 failure mode 值得研究后，才允许设计算法或实现最小 lifecycle benchmark。当前不进入 Phase 1，不训练模型，不启动 GPU。
+
+Phase 0-B 产物：`research/literature/lifecycle_gap_matrix.csv`、`research/reports/phase0_b_lifecycle_gap_falsification.md`，并同步更新 architecture landscape、evidence ledger、reproduction warnings、open problem map 和 novelty boundary。
