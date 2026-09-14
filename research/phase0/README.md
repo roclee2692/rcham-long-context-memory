@@ -39,3 +39,5 @@ Infini-attention 和 Compressive Transformer 先作为机制和失败模式参�
 需要继续真实运行时，最小可行路线是准备带 NVIDIA CUDA 的机器，并分别获得对应 checkpoint。任何超过 5GB 的模型下载或远程 GPU 运行都要单独记录成本和环境。
 
 详细入口、版本和阻塞见 `method_matrix.md` 与 `environment_gate.md`。
+
+论文可信度、训练依赖、评测泄漏和独立复现风险见 `paper_forensics_report.md`。该报告使用 paper-forensics Skill 的 G0–G4 证据等级；它不会把不可复现直接称为造假。
