@@ -18,6 +18,14 @@
 - Interpretation：暂定 `provisional research gap`，不能写成“没有人做过”。压缩、层级、召回、衰减和访问强化均已存在；可检验的最小差异是 utility 定义、更新时机和相同预算下的控制器比较。
 - Next step：Phase 0 到此停止，等待人工检查最近邻工作和创新边界后，再决定是否执行 Phase 1 控制器模拟。不得直接进入大模型训练或 Phase 2。
 
+## 2026-09-15 · RCHAM-PHASE0.5-SEMANTICS-001
+
+- Hypothesis：promotion 不能帮助从未被证明重要的 q1；只有 q1 之后的 post-use utility 才可能改善 q2/q3 的 retention 和访问成本。
+- Configuration：正式出版版本优先；核对 Native Sparse Attention、RecMem、HeteroCache 的 ACL metadata/DOI/code，并锁定 Landmark Attention、H²MT、R³Mem、KVzip、MemoryBank、SF-AMS。没有运行模型。
+- Result：Native Sparse Attention 的 ACL 2025 Long Paper DOI 为 `10.18653/v1/2025.acl-long.1126` 且标注 Best Paper；RecMem 为 Findings ACL 2026 DOI `10.18653/v1/2026.findings-acl.1619` 并有官方仓库；HeteroCache 为 ACL 2026 Long Paper DOI `10.18653/v1/2026.acl-long.1999` 并有官方仓库。H²MT 和 SF-AMS 仍按 preprint 记录；R³Mem 未找到作者官方代码。未确认完整的内部 `cold retrieval → post-use utility → promote → later reuse → decay` 闭环。
+- Interpretation：研究核心改写为“第一次冷召回”与“后续重复使用保留”两个阶段；最小 novelty statement 只针对内部 KV/attention 生命周期中的 post-use utility 资源再分配。
+- Next step：Phase 0.5 完成并停止。Phase 1 协议加入 Cold-Raw-Fallback Only 与 Perfect-Routing + No-Promotion，并强制 q1 后 memory pressure 和 q2/q3；等待确认后再实现。
+
 ## 2026-09-14 · PHASE0-CODE-AUDIT-001
 
 - Hypothesis：已有压缩/长上下文方法可以在同一 benchmark 上直接做公平比较。

@@ -29,9 +29,13 @@
 
 输出见 `research/literature/`、`research/design/` 和 `research/experiments/phase1_protocol.md`。每项结论都要区分“论文报告”“代码存在”“独立复现”“本机实测”。若发现已有工作完整覆盖 utility feedback + hierarchical internal KV lifecycle，则停止原创机制路线，改为复现、分析或明确差异。
 
-### Phase 1：机制控制器模拟（下一阶段，需 Phase 0 闸门通过）
+### Phase 0.5：文献标准化与实验语义冻结（已完成）
 
-只使用冻结的 embedding/hidden representation 和独立 memory controller，不训练大模型。写入路径绝不能看到未来 query；读取路径记录候选、是否使用证据及 counterfactual utility，再执行 promote/demote。比较 static、recency、retrieval-count、utility、utility+decay 和 oracle 六组。
+Phase 0.5 把 `first-time unexpected query` 与 `recurrent/related future query` 分开。第一次需求只能由 compressed routing + cold/raw fallback 处理；promotion 发生在 q1 之后，只能用于 q2/q3 的 retention、tier、精度和访问成本。完整记录见 `reports/phase0_5_review.md`。
+
+### Phase 1：机制控制器模拟（下一阶段，需 Phase 0.5 闸门通过）
+
+只使用冻结的 embedding/hidden representation 和独立 memory controller，不训练大模型。写入路径绝不能看到未来 query；q1 通过 cold/raw fallback 后记录 post-use utility，再执行 promote/demote，经过真实 memory pressure 后用 q2/q3 测量后续收益。比较 static、recency、retrieval-count、utility、utility+decay、oracle、cold-raw-fallback-only 和 perfect-routing/no-promotion 八组。
 
 ### Phase 2：小型真实模型验证
 

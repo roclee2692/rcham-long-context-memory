@@ -33,6 +33,23 @@
 - “层级树更少比较”不等于 recall 更高。路由成本、层级维护和错误传播必须单独统计。
 - Independent reproduction 失败是方法敏感性证据，不是原论文造假证据。
 
+## Phase 0.5 版本与代码核对
+
+- Native Sparse Attention 的正式记录是 ACL 2025 Long Paper，DOI `10.18653/v1/2025.acl-long.1126`，ACL 页面标注 Best Paper。正式页面没有作者代码链接；GitHub 上的 NSA 实现不能自动标成官方实现。
+- RecMem 的正式记录是 Findings ACL 2026，DOI `10.18653/v1/2026.findings-acl.1619`。作者仓库 `CaiusDai/RecMem` 已公开，README 给出 `uv.lock` 和评测入口，但依赖 OpenAI API 和外部数据路径，不能在当前环境直接复现。
+- HeteroCache 的正式记录是 ACL 2026 Long Paper，DOI `10.18653/v1/2026.acl-long.1999`。ACL 页面明确链接 `ponytaill/HeteroCache`；README 的 head clustering、LongBench/InfiniteBench 和 latency 入口需要 CUDA、模型权重和真实 offload。
+- H²MT 当前仍按 arXiv preprint 记录，DOI 是 `10.48550/arXiv.2605.24930`；本轮未找到正式出版版本或作者官方代码。
+- R³Mem 的正式记录是 Findings ACL 2025，DOI `10.18653/v1/2025.findings-acl.235`；本轮未找到作者官方代码。
+- SF-AMS 当前只有 arXiv `2607.22562`，没有确认的 version-of-record 或作者公开代码；只能作为最近的外部 utility/forgetting 证据。
+
+## 语义冻结带来的新风险
+
+`first-time recall` 与 `repeated-use retention` 不能合并成一个 recall 指标。一次只被查询一次的 memory 只能评估冷召回，不能证明 promotion 有价值。任何 Phase 1 结果都必须有 `q1` 后至少一个 memory-pressure interval，再出现 `q2/q3`。
+
+`retrieval-count` 不是 utility。SF-AMS、MemoryBank 和 RecMem 说明“使用、重复或时间”可以影响外部记忆的生存，但这不能直接当作内部 KV 的 counterfactual usefulness。
+
+Oracle utility 使用 gold answer 或 counterfactual loss，只能作为机制上界。它不能被描述成部署算法；deployable utility proxy 必须另立研究问题。
+
 ## 未确认候选
 
-SF-AMS、WhenLoss、MARCH、CueMem、Dynamic Hierarchical Sparse Attention 和若干 2026 learned KV policy 的公开主来源尚未在本轮固定。它们在获得一手论文、版本、代码和实验配置前，只能放在待核查列表，不能用来支持“已有完全重合”的结论。
+WhenLoss、MARCH、CueMem、Dynamic Hierarchical Sparse Attention 和若干 2026 learned KV policy 的公开主来源尚未在本轮全部固定。它们在获得一手论文、版本、代码和实验配置前，只能放在待核查列表，不能用来支持“已有完全重合”的结论。
