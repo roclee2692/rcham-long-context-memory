@@ -1,0 +1,84 @@
+{
+  "source_commit": "c9b8b19f42298a158485090a2d93da36aa3a58d9",
+  "content": "unchanged synthetic Phase 1R artifacts, gzip mtime=0; original files retained",
+  "files": [
+    {
+      "source": "research/experiments/phase1r/results/full/raw_traces.jsonl",
+      "archive": "research/closeout/evidence/raw_traces.jsonl.gz",
+      "original_bytes": 22202040,
+      "original_sha256": "f96c08034211363dd12ca14055bef215e8377da578e006fd1e270791dacd6930",
+      "archive_bytes": 1000689,
+      "archive_sha256": "e98d0d9b66e0a924819e1759b6a558e01d99876f8e52a5e26ac5e53284f6940f"
+    },
+    {
+      "source": "research/experiments/phase1r/results/full/data/episodes.json",
+      "archive": "research/closeout/evidence/data_episodes.json.gz",
+      "original_bytes": 3001737,
+      "original_sha256": "639c8075ccb298f3be362bf6adee03e73d465eeae1b7ba0a4da9a276dedf55e1",
+      "archive_bytes": 121254,
+      "archive_sha256": "23493d3d8b664cf8fb279937ab402442e14b388eeabda976296dbd00a1b580e1"
+    },
+    {
+      "source": "research/experiments/phase1r/results/full/manifest.json",
+      "archive": "research/closeout/evidence/manifest.json.gz",
+      "original_bytes": 1228,
+      "original_sha256": "757b9787b4995c0ae045572bc8adb10286c702dc128b138a8032479546c697e7",
+      "archive_bytes": 550,
+      "archive_sha256": "e50253aaad48bf7df5dabb552180c7c05bcc0b5caf0884a43746c2291ea10d40"
+    },
+    {
+      "source": "research/experiments/phase1r/results/full/preflight_summary.json",
+      "archive": "research/closeout/evidence/preflight_summary.json.gz",
+      "original_bytes": 358,
+      "original_sha256": "2989522b187b11777c3841e164dd27a3cc0c2c9ce3893391419d146943acde68",
+      "archive_bytes": 195,
+      "archive_sha256": "71f179aecf2643f517ff69e594893eaf18acb5574b14522fc724e7791bfca18c"
+    },
+    {
+      "source": "research/experiments/phase1r/results/full/metrics/preflight_cells.csv",
+      "archive": "research/closeout/evidence/metrics_preflight_cells.csv.gz",
+      "original_bytes": 18635,
+      "original_sha256": "8f96fa36f11f439405e5abbfd253ed17fa5022fe3d2277edc474b1d8c1e18935",
+      "archive_bytes": 1313,
+      "archive_sha256": "3723dacbd14ab538d7afee0d3d7b7888d39b5b6aaebd9ae213187fc6f22d7202"
+    },
+    {
+      "source": "research/experiments/phase1r/results/full/metrics/summary_by_policy.csv",
+      "archive": "research/closeout/evidence/metrics_summary_by_policy.csv.gz",
+      "original_bytes": 792,
+      "original_sha256": "c1015091f89b3974cf12ae628b6d870204bf49122d587c5d6de0837c164cb364",
+      "archive_bytes": 279,
+      "archive_sha256": "88b1ad2461fe69e0064636463601afc747538386689ebca8492b8efe338cb33f"
+    },
+    {
+      "source": "research/experiments/phase1r/results/full/metrics/summary_conditional_disagreement.csv",
+      "archive": "research/closeout/evidence/metrics_summary_conditional_disagreement.csv.gz",
+      "original_bytes": 607,
+      "original_sha256": "2371eec0400783fe5ac1e093ebaf292de6fe6e5a6df3ddff9cb2d7083f8452dc",
+      "archive_bytes": 244,
+      "archive_sha256": "9f75256171be1d950ac0dd1b91fcf35f2d7928a0fd9613e5c00927e1bb3a5381"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "research/experiments/phase1r/__init__.py",
+      "sha256": "01e3e3468f77656ddd119fa894388d99e74de0c02fa1a739f4544b75206c4bee"
+    },
+    {
+      "path": "research/experiments/phase1r/answer_model.py",
+      "sha256": "91c5217f338cc188bf8151de85d1bbfc50ebd1092806cd17da78748b21665726"
+    },
+    {
+      "path": "research/experiments/phase1r/generate_data.py",
+      "sha256": "8511f5a1bb29018f75b7fc9cb96c843d1a302efd209168ac65b3278f00dcaad4"
+    },
+    {
+      "path": "research/experiments/phase1r/policies.py",
+      "sha256": "4cc0e25441c31e4b75e1379aa5befa13e28b9e33e2fbbf20b5bda8258796d0ef"
+    },
+    {
+      "path": "research/experiments/phase1r/run_phase1r.py",
+      "sha256": "13f280694b5907244ebcc48475975e679b56ec09bf6b447a00baeeb58424ed52"
+    }
+  ]
+}

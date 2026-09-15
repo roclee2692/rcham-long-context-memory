@@ -1,5 +1,9 @@
 # RCHAM：检索反馈式层级注意力记忆
 
+> **最终状态（2026-09-15）：CLOSED。**停止 RCHAM 新架构及 post-use task utility 路线的继续投入。Phase 1R 未充分测试真实模型的命题；终止依据是缺少可靠正证据，而非普遍反证。
+> [最终复核报告](reports/research_closeout.md) · [Rejected hypotheses](closeout/rejected_hypotheses.md) · [Reusable infrastructure](closeout/reusable_infrastructure.md) · [Open questions，仅存档](closeout/open_questions.md)。
+> 下文保留早期阶段说明，不再授权后续实验；所有复现命令仅作历史资料。
+
 本目录是 RCHAM 研究的独立实验区。**Phase 0.5 已完成，Phase 1A Oracle Controller Pilot 已完成并停止在闸门处。**研究问题已经从“压缩能不能做”收敛为：第一次需求由 cold/raw fallback 处理；记忆被召回且被证明有用后，是否应该提升它的保存精度和 attention 可访问性；长期不用则降级。
 
 本阶段不实现层级检索树、局部 Transformer、快照重建、知识图谱、CUDA/Triton 或大模型训练。

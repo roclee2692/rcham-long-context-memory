@@ -1,5 +1,7 @@
 # Phase 1R — Discriminative Principle Test
 
+> **结项更正（2026-09-15）：下文保留原始报告，不再作为充分检验真实 task utility 的证据。**复核发现 scorer 仍为词面覆盖、RMM correctness 全为 True、seeds 无决策相关变化，accuracy/retention/gate 存在口径问题。停止项目决定维持；科学结论改为缺少可靠正证据。完整缓存分歧为 60 单元，Task 0 胜/24 负/36 平。见 [最终复核报告](research_closeout.md)。原数值不覆盖。
+
 本实验只验证 q1 后两种 utility policy 是否真正可区分及其最小 downstream 后果；没有 Transformer 训练、GPU、硬件 tier 或大型模型。
 
 ## Pre-flight gate

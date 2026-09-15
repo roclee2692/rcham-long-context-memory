@@ -1,0 +1,80 @@
+{
+  "analysis": "existing artifact audit only; no new experimental run",
+  "evaluated_commit": "c9b8b19f42298a158485090a2d93da36aa3a58d9",
+  "raw_trace_sha256": "f96c08034211363dd12ca14055bef215e8377da578e006fd1e270791dacd6930",
+  "episodes_sha256": "639c8075ccb298f3be362bf6adee03e73d465eeae1b7ba0a4da9a276dedf55e1",
+  "manifest_hash_verified": true,
+  "episodes": 108,
+  "runs": 648,
+  "q1_correct_true": 108,
+  "q1_rmm_score_equals_handcrafted_attention": 108,
+  "utilities_all_multiples_of_three_cells": 108,
+  "q1_admission_candidate_count_at_most_slots_cells": 108,
+  "unique_decision_relevant_schedules": 36,
+  "nominal_seed_groups": 36,
+  "different_decision_relevant_schedules_within_seed_group": 0,
+  "old_gate_disagreement": 24,
+  "full_cache_disagreement": 60,
+  "eviction_sequence_disagreement": 60,
+  "strict_rank_reversal_cells": 48,
+  "pearson_defined": 48,
+  "spearman_defined": 48,
+  "pearson_defined_mean": 0.07448857862769905,
+  "spearman_defined_mean": 0.0,
+  "subsets": {
+    "all": {
+      "n": 108,
+      "full_cache_retention": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 84
+      },
+      "original_retention": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 84
+      },
+      "answer_proxy": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 84
+      }
+    },
+    "old_gate": {
+      "n": 24,
+      "full_cache_retention": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 0
+      },
+      "original_retention": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 0
+      },
+      "answer_proxy": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 0
+      }
+    },
+    "full_cache_disagreement": {
+      "n": 60,
+      "full_cache_retention": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 36
+      },
+      "original_retention": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 36
+      },
+      "answer_proxy": {
+        "wins": 0,
+        "losses": 24,
+        "ties": 36
+      }
+    }
+  }
+}

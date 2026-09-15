@@ -1,5 +1,7 @@
 # Phase 1R Pre-flight Gate
 
+> **2026-09-15 审计更正：**旧 gate 的 24/108 使用的是当前 gold evidence 命中子集；完整 cache 分歧实际为 60/108。Top-K 选中了全部候选，常量向量相关系数被错误记为 1，rank reversal 漏计。详见 [最终复核](research_closeout.md)；下文原始记录保留，不能据此声称 Phase 1R 满足了全部实验要求。
+
 本文件只报告 RMM-like 与 Task Utility 是否在新定义下产生真实决策分歧；正式 policy comparison 只有在 gate 通过后才允许运行。
 
 - Episode-budget cells: `108`

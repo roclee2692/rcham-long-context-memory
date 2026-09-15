@@ -1,5 +1,7 @@
 # Phase 1R — Discriminative Principle Test
 
+> **CLOSED, 2026-09-15.** The original implementation is preserved for audit, not endorsed as a valid test of real-model task utility or a faithful RMM comparison. See the [closeout review](../../reports/research_closeout.md). Do not start new runs; the [read-only artifact audit](../../closeout/README.md) is the current review entry point.
+
 This is the one-time correction to the non-identifiable Phase 1 Minimal benchmark.
 
 ## Reproduction

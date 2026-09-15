@@ -1,5 +1,9 @@
 # 局部注意力与可回溯层级记忆
 
+> **2026-09-15：项目结项，终止作为当前新架构研究方向的投入。**
+> 现有证据不足以支持完整 RCHAM 实现；Phase 1R 只有存在测量缺陷的 synthetic 负结果，不能宣称真实 LLM task utility 已被科学证伪。
+> 以 [最终复核与停止决定](research/reports/research_closeout.md) 和 [结项档案](research/closeout/README.md) 为准。下文是 v0.1 历史设计与结果，不是待执行计划。
+
 **架构版本：v0.1 · 首次仓库留档日期：2026-09-14**
 
 研究目标：借鉴 CNN 从局部到整体的层级组织，用局部 Attention 和逐层压缩降低全局两两计算的开销；同一层级保留细节入口，需要历史时由粗到细展开，把必要信息送回当前计算。
@@ -53,5 +57,5 @@ python3 outputs/compression_probe/probe.py --output-dir work/reproduction
 - `docs/architecture-v0.1.md` 是本次设计快照；未来实质修改另存 `architecture-v0.2.md` 等，并更新思想与版本记录。
 - 以后实验使用新的结果目录，不覆盖本次归档数据。
 - 每次提交说明改动的假设、实现和证据范围。失败结果同样保留。
-- 当前仓库是本地版本记录；未配置远程仓库。
+- 已配置远程仓库 `https://github.com/roclee2692/gpu-hbm-flashattention-attention-q-k`；本地 commit 与远端发布状态需分别核验。
 - 架构原始主张来自用户在本次讨论中的陈述；文档、优化建议和实验脚本由 AI 协助整理，未将未经实验的建议记为已证实成果。

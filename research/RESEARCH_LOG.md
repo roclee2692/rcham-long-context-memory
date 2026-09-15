@@ -1,5 +1,7 @@
 # Research Log
 
+> **最终状态：2026-09-15 已结项。**当前结论以本文最后的 CLOSEOUT 审计及 `reports/research_closeout.md` 为准。早期的 NO-GO/CONDITIONAL GO 表述是当时记录，后续审计更正不会删除历史。
+
 ## 2026-09-14 · PHASE1-PILOT-001
 
 - Hypothesis：自然语言压缩在未来问题未知时，可能不能直接回答全部问题，但仍能保留部分事实或帮助定位原文。
@@ -82,3 +84,11 @@ Phase 0-B 产物：`research/literature/lifecycle_gap_matrix.csv`、`research/re
 - Result：全部 episode 中 RMM-like future retention `0.556`，Task Utility `0.389`；真正分歧的 24 个单元中 RMM-like `0.833`、Task Utility `0.083`。Task Utility future-retention win rate `0/24`，combined q2/q3 accuracy win rate `0/24`。Recency、frequency、attention 在共享 q1 admission 后不再结构性饱和为零。
 - Interpretation：`NO-GO`。这次修正确实使 policy 可区分，但当前 frozen lexical counterfactual signal 在分歧样本上不优于 RMM-like，反而更差；不能用 hierarchy、decay、hardware tier 或更大 benchmark 挽救本阶段结论。该结果也暴露了“gold-answer token support”与语义证据归因之间的限制。
 - Next step：停止。不得进入完整 RCHAM、Transformer、GPU 或 Phase 1 后续扩展；保留 Phase 1R raw traces、pre-flight gate、测试和报告供复核。
+
+## 2026-09-15 · RCHAM-CLOSEOUT-001
+
+- Hypothesis：复核 Phase 1R 是否足以支持“真实 task-level utility 已失败”，并决定是否继续项目投入。
+- Configuration：只读源码与既有 108 episodes / 648 traces；独立交叉审阅；核验 RMM v1 §4–5；新脚本只汇总旧数据，不导入或执行实验模块。原 trace SHA-256 与 manifest 一致；未训练、未运行模型、未重跑实验或原测试。
+- Result：旧 0/24 可复算；完整 cache 的实际分歧为 60/108，Task 0 胜/24 负/36 平。旧 gate 使用 gold evidence 子集。q1 correctness 在 108/108 单元恒真，RMM 分数等于手工 attention；Task scorer 精确为 3×独占 gold 词面次数。三个 seeds 只改变无作用 nonce；36 个决策相关序列、九种固定模板。主要 accuracy 仅是 evidence-ID availability，旧 retention/regret 也有测量偏差。完整缓存 retention（所有单元）RMM-like 0.685185、Task 0.500000，仍只是模拟器描述性统计。
+- Interpretation：CLOSED — INSUFFICIENT VALIDATED BENEFIT。终止 RCHAM 当前新架构方向与 task-utility 路线；不能写“真实模型上已证伪”。本次揭示的是实验契约和报告缺陷，不允许作为第二次修正或新增架构模块的理由。早期“真实 counterfactual / 三 seeds 稳定 / 真实 answer accuracy”的表述过强，已在结项报告更正。
+- Next step：仅归档。Rejected hypotheses、可复用材料、Open questions 分别保存；完整 synthetic 原证据无损 gzip 入档。不得自动开始 Phase 2、predictor、hierarchy、decay 或 hardware tier。新项目需用户另行明确立项。

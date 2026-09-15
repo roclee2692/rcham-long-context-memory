@@ -1,5 +1,7 @@
 # RCHAM 可证伪假设（Phase 0.5 冻结版）
 
+> **2026-09-15 结项注：本文件为历史假设，不是当前研究计划。**当前方向已停止；各项关闭理由及科学边界见 [关闭的假设清单](../closeout/rejected_hypotheses.md) 和 [最终复核](../reports/research_closeout.md)。不得执行后续 Phase 或用新增模块补救。
+
 ## H0：第一次召回和后续保留是两个实验问题
 
 `q1` 到来前，M 没有 post-use evidence；promotion 不可能改善 `q1` 的先验发现。第一次只评估 cold/raw fallback 的 evidence recall、answer accuracy 和访问成本。
