@@ -1,8 +1,8 @@
 # 局部注意力与可回溯层级记忆
 
-> **2026-09-15：项目结项，终止作为当前新架构研究方向的投入。**
+> **2026-09-15：项目暂时冻结（DORMANT / ARCHIVED），核心真实模型假设未充分验证，未被证伪。**
 > 现有证据不足以支持完整 RCHAM 实现；Phase 1R 只有存在测量缺陷的 synthetic 负结果，不能宣称真实 LLM task utility 已被科学证伪。
-> 以 [最终复核与停止决定](research/reports/research_closeout.md) 和 [结项档案](research/closeout/README.md) 为准。下文是 v0.1 历史设计与结果，不是待执行计划。
+> 当前决策及重启条件见 [项目状态](research/PROJECT_STATUS.md)；证据见 [源码复核](research/reports/research_closeout.md) 和 [结项档案](research/closeout/README.md)。不启动新实验。下文是 v0.1 历史设计与结果，不是待执行计划。
 
 **架构版本：v0.1 · 首次仓库留档日期：2026-09-14**
 

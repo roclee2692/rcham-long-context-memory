@@ -1,6 +1,6 @@
 # Research Log
 
-> **最终状态：2026-09-15 已结项。**当前结论以本文最后的 CLOSEOUT 审计及 `reports/research_closeout.md` 为准。早期的 NO-GO/CONDITIONAL GO 表述是当时记录，后续审计更正不会删除历史。
+> **当前状态：2026-09-15 暂时冻结（DORMANT / ARCHIVED）。**项目决策以 [PROJECT_STATUS.md](PROJECT_STATUS.md) 和本文末 DORMANCY 记录为准；科学证据解释仍以 CLOSEOUT 审计及 `reports/research_closeout.md` 为准。早期的 NO-GO/CONDITIONAL GO/终止表述是当时记录，后续修订不删除历史。
 
 > 下项 RCHAM-CLOSEOUT-NOGO 来自远端 cede1bf，保留审计前记录；其数字口径与结论由本文末 RCHAM-CLOSEOUT-001 更正。
 
@@ -104,3 +104,11 @@ Phase 0-B 产物：`research/literature/lifecycle_gap_matrix.csv`、`research/re
 - Result：旧 0/24 可复算；完整 cache 的实际分歧为 60/108，Task 0 胜/24 负/36 平。旧 gate 使用 gold evidence 子集。q1 correctness 在 108/108 单元恒真，RMM 分数等于手工 attention；Task scorer 精确为 3×独占 gold 词面次数。三个 seeds 只改变无作用 nonce；36 个决策相关序列、九种固定模板。主要 accuracy 仅是 evidence-ID availability，旧 retention/regret 也有测量偏差。完整缓存 retention（所有单元）RMM-like 0.685185、Task 0.500000，仍只是模拟器描述性统计。
 - Interpretation：CLOSED — INSUFFICIENT VALIDATED BENEFIT。终止 RCHAM 当前新架构方向与 task-utility 路线；不能写“真实模型上已证伪”。本次揭示的是实验契约和报告缺陷，不允许作为第二次修正或新增架构模块的理由。早期“真实 counterfactual / 三 seeds 稳定 / 真实 answer accuracy”的表述过强，已在结项报告更正。
 - Next step：仅归档。Rejected hypotheses、可复用材料、Open questions 分别保存；完整 synthetic 原证据无损 gzip 入档。不得自动开始 Phase 2、predictor、hierarchy、decay 或 hardware tier。新项目需用户另行明确立项。
+
+## 2026-09-15 · RCHAM-DORMANCY-001
+
+- Question：在永久放弃、暂时冻结和立即真实模型小实验之间作出项目决策。
+- Configuration：仅修订状态及文档入口，基于现有源码审计；不重新运行实验、模型、generator、controller 或统计脚本。
+- Result：DORMANT / ARCHIVED — NOT ADEQUATELY TESTED; NOT FALSIFIED; NOT VALIDATED。旧 Phase 1R 实现继续关闭，原始结果、审计与此前停止决定保留。
+- Interpretation：这是项目状态澄清，不是新的科学发现。无效的真实模型对照不足以否定核心命题，同样不提供正证据；没有找到同构论文也不证明新颖性。尚未测算真实实验成本，因此不以未经测算的“昂贵”作为既定事实。此前实现偏离实验要求的责任不能转化为用户假设失败。
+- Next step：暂时冻结。重启需先通过测量契约独立检查、具备封顶资源方案、预先约定结果判定与停止规则，再由用户明确批准。详见 `PROJECT_STATUS.md`。不自动增加模块，不运行后台任务，不启动真实模型最小实验。

@@ -1,6 +1,6 @@
 # RCHAM 创新边界（Phase 0.5 冻结版）
 
-> **2026-09-15：TERMINATED AS CURRENT NOVELTY DIRECTION。**下列创新边界与 gap 判断为历史记录，未建立足以继续实现的贡献证据。以 [最终结项复核](../reports/research_closeout.md) 为准；未确认覆盖不等于证明没人做过。
+> **2026-09-15：DORMANT / ARCHIVED。**下列创新边界与 gap 判断为历史记录，未建立足以继续实现的贡献证据。项目决策见 [当前状态](../PROJECT_STATUS.md)，实验解释见 [结项复核](../reports/research_closeout.md)；未确认覆盖不等于证明没人做过。
 
 ## 先把两个问题分开
 
