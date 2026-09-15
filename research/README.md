@@ -1,6 +1,6 @@
 # RCHAM：检索反馈式层级注意力记忆
 
-> **当前状态（2026-09-15）：DORMANT / ARCHIVED。**方向暂时冻结，核心真实模型假设未充分验证、未被证伪；旧 Phase 1R 实现保持关闭。[当前决策与重启条件](PROJECT_STATUS.md) 优先于下文历史状态，不启动新实验。
+> **当前状态（2026-09-15）：FROZEN / ARCHIVED。**方向暂时冻结，核心真实模型假设未充分验证、未被证伪；旧 Phase 1R 实现保持关闭。[当前决策与重启条件](PROJECT_STATUS.md) 优先于下文历史状态，当前没有计划开展新实验。
 > [最终复核报告](reports/research_closeout.md) · [关闭的假设](closeout/rejected_hypotheses.md) · [可复用材料](closeout/reusable_infrastructure.md) · [仅存档的问题](closeout/open_questions.md)。
 >
 > 旧表的 0/24 可以重算，但完整 cache 分歧实际为 60 单元（Task 0 胜/24 负/36 平）；scorer 仍是词面覆盖，q1 RMM correctness 恒真，seed 只改变未使用 nonce，accuracy 是 evidence-ID 可用率。不得把下文旧表当成真实模型验证。

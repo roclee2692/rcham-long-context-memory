@@ -1,6 +1,6 @@
 # Research Log
 
-> **当前状态：2026-09-15 暂时冻结（DORMANT / ARCHIVED）。**项目决策以 [PROJECT_STATUS.md](PROJECT_STATUS.md) 和本文末 DORMANCY 记录为准；科学证据解释仍以 CLOSEOUT 审计及 `reports/research_closeout.md` 为准。早期的 NO-GO/CONDITIONAL GO/终止表述是当时记录，后续修订不删除历史。
+> **当前状态：2026-09-15 FROZEN / ARCHIVED。**项目决策以 [PROJECT_STATUS.md](PROJECT_STATUS.md) 和本文末 DORMANCY 记录为准；科学证据解释仍以 CLOSEOUT 审计及 `reports/research_closeout.md` 为准。早期的 NO-GO/CONDITIONAL GO/终止表述是当时记录，后续修订不删除历史。
 
 > 下项 RCHAM-CLOSEOUT-NOGO 来自远端 cede1bf，保留审计前记录；其数字口径与结论由本文末 RCHAM-CLOSEOUT-001 更正。
 

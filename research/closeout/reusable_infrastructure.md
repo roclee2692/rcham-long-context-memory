@@ -16,6 +16,6 @@
 | paper-forensics workflow | 用户提供的 `paper-forensics-skill/SKILL.md`（仓库外） | claim → code → raw → metric 核对、复算与限制说明 | 工作流不是“论文可信”认证；本次未复制或修改仓库外 skill |
 
 本轮使用的 skill 位于：
-`/Users/raelon/Drives/D-DevWorkspace/01-活跃项目/01-AI-Agent与自动化/DeepSeekHarnessWorkSpace/paper-forensics-skill/SKILL.md`。
+本地使用过的 `paper-forensics` skill 位于原开发机路径；该路径不属于公开仓库，也不作为公开复现依赖。公开归档保留其方法论影响，具体技能文件需在具备该 skill 的环境中另行取得。
 
 用户之前提供的 `research-workflow.zip` 未在本轮解压、执行或评估，不能将其说成已验证工具。

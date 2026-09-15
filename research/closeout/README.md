@@ -1,6 +1,6 @@
 # Research Closeout
 
-RCHAM 当前暂时冻结（DORMANT / ARCHIVED），核心真实模型假设未充分验证、未被证伪。见 [当前决策及重启条件](../PROJECT_STATUS.md)。本目录保存既有结项证据；旧 Phase 1R 实现保持关闭，审计结论见 [复核报告](../reports/research_closeout.md)。
+RCHAM 当前 FROZEN / ARCHIVED（暂时冻结），核心真实模型假设未充分验证、未被证伪。见 [当前决策及重启条件](../PROJECT_STATUS.md)。本目录保存既有结项证据；旧 Phase 1R 实现保持关闭，审计结论见 [复核报告](../reports/research_closeout.md)。
 
 - [关闭的研究主张](rejected_hypotheses.md)
 - [可复用材料及限制](reusable_infrastructure.md)

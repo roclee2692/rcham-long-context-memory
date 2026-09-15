@@ -1,8 +1,18 @@
-# 局部注意力与可回溯层级记忆
+# RCHAM Research Archive
 
-> **2026-09-15：项目暂时冻结（DORMANT / ARCHIVED），核心真实模型假设未充分验证，未被证伪。**
-> 现有证据不足以支持完整 RCHAM 实现；Phase 1R 只有存在测量缺陷的 synthetic 负结果，不能宣称真实 LLM task utility 已被科学证伪。
-> 当前决策及重启条件见 [项目状态](research/PROJECT_STATUS.md)；证据见 [源码复核](research/reports/research_closeout.md) 和 [结项档案](research/closeout/README.md)。不启动新实验。下文是 v0.1 历史设计与结果，不是待执行计划。
+## Retrieval-Conditioned Hierarchical Attention Memory
+
+> ⚠️ **Research status: FROZEN / ARCHIVED**
+>
+> This repository preserves an independently conceived long-context Attention / KV-memory research hypothesis, its prior-art audit, prototype experiments, experiment failures, and methodological corrections.
+>
+> The central real-model hypothesis has neither been validated nor adequately falsified. The project is currently frozen because the available evidence does not justify the cost of a full implementation. Future researchers are welcome to inspect, reproduce, criticize, or redesign the experiments.
+
+> ⚠️ **研究状态：FROZEN / ARCHIVED（暂时冻结 / 归档）。**
+>
+> 本仓库公开保存一个独立提出的长上下文 Attention / KV-memory 架构假设，以及文献审计、实验、失败结果和后续源码复核。核心真实模型假设目前既没有得到验证，也没有被充分证伪。当前冻结是研究资源决策，而不是宣布该方向失败。欢迎后续研究者复现、质疑或重新设计实验。
+
+当前决策及重启条件见 [项目状态](research/PROJECT_STATUS.md)；证据见 [源码复核](research/reports/research_closeout.md) 和 [结项档案](research/closeout/README.md)。当前没有计划开展新实验。下文是 v0.1 历史设计与结果，不是待执行计划。
 
 **架构版本：v0.1 · 首次仓库留档日期：2026-09-14**
 
@@ -13,6 +23,14 @@
 这是研究设计与实验档案。现已完成无训练的合成向量导航预实验；可训练语义压缩、模型内部 Attention 替换和整模收益尚未验证。
 
 ![架构 v0.1](outputs/architecture-v0.1.png)
+
+### 概念架构图
+
+下面的图是项目早期的概念示意，用于解释“局部窗口 → 多尺度压缩 → 记忆分层 → 按需召回”的直觉。它不是已经实现或验证的 Transformer 架构；图中复杂度、动态窗口和多模态等内容均属于未验证设计假设。
+
+![层级滑动窗口记忆架构（概念图）](docs/figures/hierarchical_memory_architecture.png)
+
+也可查看[可编辑的 Mermaid 架构图](docs/figures/architecture-v0.1.mmd)和[早期 SVG 图](outputs/architecture-v0.1.svg)。
 
 ## 阅读入口
 
@@ -57,5 +75,5 @@ python3 outputs/compression_probe/probe.py --output-dir work/reproduction
 - `docs/architecture-v0.1.md` 是本次设计快照；未来实质修改另存 `architecture-v0.2.md` 等，并更新思想与版本记录。
 - 以后实验使用新的结果目录，不覆盖本次归档数据。
 - 每次提交说明改动的假设、实现和证据范围。失败结果同样保留。
-- 已配置远程仓库 `https://github.com/roclee2692/gpu-hbm-flashattention-attention-q-k`；本地 commit 与远端发布状态需分别核验。
+- 已配置远程仓库 `https://github.com/roclee2692/rcham-long-context-memory`；本地 commit 与远端发布状态需分别核验。
 - 架构原始主张来自用户在本次讨论中的陈述；文档、优化建议和实验脚本由 AI 协助整理，未将未经实验的建议记为已证实成果。

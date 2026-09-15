@@ -70,7 +70,7 @@ cooldown_steps: 3
 ```
 
 The complete machine-readable configuration is in
-[config.json](/Users/raelon/Documents/Codex/2026-09-14/gpu-hbm-flashattention-attention-q-k/research/experiments/phase1a/config.json).
+[config.json](../experiments/phase1a/config.json).
 
 ## 4. Aggregate results
 
@@ -128,7 +128,7 @@ q3: M in Tier 1; hot_evidence_recall=1.0; cold_blocks=0
 ```
 
 The complete unmodified traces are in
-[traces.jsonl](/Users/raelon/Documents/Codex/2026-09-14/gpu-hbm-flashattention-attention-q-k/research/experiments/phase1a/results/raw/traces.jsonl).
+[traces.jsonl](../experiments/phase1a/results/raw/traces.jsonl).
 
 ## 7. Failure cases and limits
 
