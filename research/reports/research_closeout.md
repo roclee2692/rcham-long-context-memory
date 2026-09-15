@@ -140,4 +140,6 @@ q1 最多四个候选，而 admission slots 为 4 或 8；108/108 单元中候�
 
 本地 Phase 1R commit 完整存在。首次在线只读核验时，origin/main 为 `b4548d418e0fba3c17db58bd8a822701abccfb80`，比 `c9b8b19` 落后五个 commit。因而此前的本地 commit 记录不能当作远端已发布证明。最终同步结果另记于提交交付说明；远端状态以实际查询为准。
 
+结项过程中，远端新增 `cede1bf5d29fc0524ac0ec82ebfb34fd4d1918f8`，包含一份基于对话报告、尚未看到本地源码的结项说明。本轮合并保留该 commit 和 `rcham_closeout_2026-09-15.md` 原文，并在入口与日志中标明本次直接证据复核的更正。没有用 force push 替换任何远端历史。
+
 **STOP。未运行新实验，未修改实验实现，未启动 GPU、模型下载或收费 API。**

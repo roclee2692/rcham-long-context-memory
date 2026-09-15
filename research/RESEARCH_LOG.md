@@ -2,6 +2,18 @@
 
 > **最终状态：2026-09-15 已结项。**当前结论以本文最后的 CLOSEOUT 审计及 `reports/research_closeout.md` 为准。早期的 NO-GO/CONDITIONAL GO 表述是当时记录，后续审计更正不会删除历史。
 
+> 下项 RCHAM-CLOSEOUT-NOGO 来自远端 cede1bf，保留审计前记录；其数字口径与结论由本文末 RCHAM-CLOSEOUT-001 更正。
+
+## 2026-09-15 · RCHAM-CLOSEOUT-NOGO
+
+- Hypothesis：q1 中观测到的 task-level post-use utility 可以比更简单的 demonstrated-utility / attention-derived signal 更好地预测 q2/q3 前哪些历史 KV 应继续占用稀缺资源。
+- Configuration：Phase 1R 仅做 synthetic lifecycle 判别实验；不训练 Transformer，不实现 hierarchy、decay、GPU/CPU/SSD tiering。Task Utility 使用固定 answer scorer 的逐 block mask 反事实分数 `logp(full) - logp(masked)`；RMM-like 使用 q1 attention × frozen-model correctness 的 block-level adaptation。所有 policy 共享相同 q1 candidate set、capacity 和 admission budget。
+- Identifiability：108/108 score vectors 不同；retained-set disagreement 24/108 = 22.2%；eviction decision disagreement 60/108；平均 Pearson 0.2596；平均 Spearman 0.2000；因此本轮 benchmark 能真实区分两个 policy。
+- Result：在 24 个真实 retained-set 分歧单元中，RMM-like future retention / q2 / q3 = 0.833 / 1.000 / 1.000；Task Utility = 0.083 / 0.000 / 0.000。Task Utility conditional future-retention win = 0/24，q2/q3 win = 0/24。全部 108 单元中，RMM-like retention / q2 / q3 = 0.556 / 0.556 / 0.667；Task Utility = 0.389 / 0.333 / 0.444。
+- Interpretation：**NO-GO**。当前证据不支持“把过去一次回答的 task utility 测得更精确，就能解决未来未知 query 下的 KV retention”。核心失败桥梁是 `past utility -> future usefulness`。`obsolete_information`、`redundant_evidence` 和 `cross_event` 暴露了过去效用、冗余和 answer-scorer 定义与未来复用之间的错位。
+- Project decision：RCHAM 作为新的端到端 Attention / KV-memory 架构方向停止。不得继续增加 hierarchy、decay、promotion/demotion 或 hardware tier 来挽救当前信号。未来若重新研究 long-context / KV memory，必须从新的公开 failure mode、新可观测信号和新的 prior-art audit 开始，并作为新项目处理。
+- Closeout report：`research/reports/rcham_closeout_2026-09-15.md`。
+
 ## 2026-09-14 · PHASE1-PILOT-001
 
 - Hypothesis：自然语言压缩在未来问题未知时，可能不能直接回答全部问题，但仍能保留部分事实或帮助定位原文。
