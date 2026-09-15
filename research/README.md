@@ -1,53 +1,91 @@
 # RCHAM：检索反馈式层级注意力记忆
 
-本目录是 RCHAM 研究的独立实验区。当前阶段是 **Phase 0.5：文献标准化与实验语义冻结**。研究问题已经从“压缩能不能做”收敛为：第一次需求由 cold/raw fallback 处理；记忆被召回且被证明有用后，是否应该提升它的保存精度和 attention 可访问性；长期不用则降级。
+> **状态：研究方向已关闭（2026-09-15）**
+>
+> RCHAM 不再作为新的端到端 Attention / KV-memory 架构继续推进。Architecture-wide prior-art audit 表明大多数组件已有成熟或高度接近的工作；剩余核心假设——“q1 中观察到的 task-level post-use utility 能更好预测 q2/q3 前应保留的历史 KV”——在 Phase 1R 的可区分性修正实验中得到 **NO-GO**。
+>
+> 详细收尾见 [`reports/rcham_closeout_2026-09-15.md`](reports/rcham_closeout_2026-09-15.md)。除非出现新的、直接面向 future reuse 的可观测信号并重新完成 prior-art audit，否则不得把该方向作为 Phase 2 继续扩展。
 
-本阶段不实现层级检索树、局部 Transformer、快照重建、知识图谱、CUDA/Triton 或大模型训练。
+## 最终研究结论
 
-## 当前状态
-
-旧的自然语言压缩 Pilot 已完成，作为 Phase -1 历史证据保留在 `reports/phase1_pilot_report.md`：
+本项目最终确认的核心边界是：
 
 ```text
-确定性自然语言长文档
-→ 不看问题的 One-shot / Chunk / Hierarchical 压缩
-→ A：仅看压缩表示回答
-→ B：压缩表示为 query 找候选原文
-→ C：读取候选原文后回答
-→ 自动指标、原始输出和失败案例
+Past utility != future usefulness
 ```
 
-当前 Phase 0.5 不运行 GPU 方法、不下载新模型、不调用收费 API。环境限制和已审计的官方仓库见 `phase0/environment_gate.md`；语义冻结报告见 `reports/phase0_5_review.md`。
+在 future query 未知时：
 
-## 目录
+- 最近访问、访问频率和传统 Attention 不能可靠确定未来语义重要性；
+- 即使一段历史在 q1 中确实帮助了当前答案，也不能推出它在 q2/q3 中仍值得占用稀缺 KV 资源；
+- 传统 Cache 的时间局部性（Temporal Locality）和空间局部性（Spatial Locality）在该问题中可能存在，但不足以解决“未知未来语义查询下的信息重要性预测”；
+- 因此不能继续用 hierarchy、decay、promotion/demotion、GPU/CPU/SSD tiering 去补救一个未经支持的预测信号。
 
-- `configs/`：冻结的 Pilot 参数
-- `data/`：生成的原文、事实清单和问题；生成器与压缩代码分离
-- `src/datasets/`：确定性自然语言 benchmark 生成器
-- `src/compression/`：本地模型压缩调用
-- `src/evaluation/`：自动评分和图表生成
-- `experiments/phase1/`：Pilot 入口
-- `results/raw/`：模型的原始摘要和回答
-- `results/metrics/`：自动生成的指标
-- `results/figures/`：Compression Ratio 图表
-- `reports/`：阶段报告
-- `literature/`：主论文证据、最近工作矩阵和复现警告
-- `design/`：RCHAM v0.2 架构、创新边界和假设
-- `experiments/phase1_protocol.md`：下一阶段控制器模拟协议（当前不执行）
-- `RESEARCH_LOG.md`：每次实验记录
+这不是“层级记忆永远不可行”的证明，而是一个项目级停止结论：**现有证据不足以支持继续投入完整实现。**
 
-## 复现
+## 研究路径
 
-从仓库根目录运行：
+项目经历了以下阶段：
 
-```bash
-python3 research/src/datasets/generate_pilot.py
-python3 research/experiments/phase1/run_pilot.py
-python3 research/src/evaluation/score_pilot.py
-```
+1. **Phase -1 / Pilot**：自然语言压缩和层级路由预实验；发现层级结构本身不自动提高 recall。
+2. **Phase 0 / 0.5**：文献、官方代码和论文真实性审计；将宽泛 RCHAM novelty 缩小到 post-use lifecycle 接口。
+3. **Architecture-wide Prior-Art Audit**：确认 compression、hierarchy、fallback、utility、tiering、promotion/demotion 等大组件均已有强先例。
+4. **Lifecycle Gap Falsification**：把候选问题进一步缩到“q1 后 task attribution 是否能改善 future internal-KV lifecycle”。
+5. **Phase 1 Minimal Principle Test**：初始结果表面 NO-GO，随后审计发现 RMM-like 与 Task Utility 实际做出完全相同的 eviction 决策，因此判定为 **NON-IDENTIFIABLE**。
+6. **Phase 1R Discriminative Principle Test**：修正 benchmark，使两种策略产生真实 retained-set / eviction disagreement；最终 Task Utility 在分歧单元中明显落后于 RMM-like，正式得到 **NO-GO**。
 
-上述命令用于复现历史 Pilot；它不等同于当前 RCHAM Phase 1。当前阶段先读 `research_plan.md` 和 `literature/`，不得跳过 Phase 0 闸门直接训练 Transformer。
+## Phase 1R 最终结果
 
-## 结论边界
+在 108 个 episode-budget 单元中：
 
-历史 Pilot 的结论是 `partially supported`，不能外推为 RCHAM 成立。当前 Phase 0 的结论和证据等级以 `literature/paper_evidence_ledger.md` 与 `design/novelty_boundary.md` 为准。
+- score vectors different：108/108
+- retained-set disagreement：24/108 = 22.2%
+- eviction decision disagreement：60/108
+- 平均 Pearson：0.2596
+- 平均 Spearman：0.2000
+
+在真正发生 retained-set 分歧的 24 个单元中：
+
+| Policy | Future retention | q2 accuracy | q3 accuracy |
+|---|---:|---:|---:|
+| RMM-like | **0.833** | **1.000** | **1.000** |
+| Task Utility | 0.083 | 0.000 | 0.000 |
+
+Task Utility conditional win rate：
+
+- future-retention：0/24
+- q2/q3 accuracy：0/24
+
+全部 108 个单元：
+
+| Policy | Future retention | q2 accuracy | q3 accuracy |
+|---|---:|---:|---:|
+| RMM-like | **0.556** | **0.556** | **0.667** |
+| Task Utility | 0.389 | 0.333 | 0.444 |
+
+因此，继续实现完整 RCHAM 不再合理。
+
+## 保留的资产
+
+项目虽然停止，但以下资产应保留：
+
+- `literature/`：文献矩阵、证据账本、复现警告；
+- `design/`：架构历史、创新边界和失败假设；
+- `experiments/`：等预算 policy harness 和 benchmark 代码；
+- `results/`：raw traces、metrics、manifest；
+- `reports/`：所有阶段报告，包括失败结果；
+- `RESEARCH_LOG.md`：完整研究过程。
+
+最重要的可复用方法论是：
+
+> **在比较两个机制的下游效果前，先证明 benchmark 能让它们真正做出不同决策。**
+
+## 不应继续做的事情
+
+- 不再设计新的 RCHAM controller；
+- 不训练 Transformer 来“再试一次”；
+- 不增加 hierarchy / decay / hardware tier 来挽救当前假设；
+- 不把 synthetic NO-GO 外推成“所有真实 LLM 上 task utility 永远无效”；
+- 不把未来新想法直接称为 RCHAM Phase 2。
+
+若以后重新研究 long-context / KV memory，应从新的公开 failure mode 和新的 prior-art audit 开始，作为新项目处理。
