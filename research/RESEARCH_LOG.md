@@ -73,3 +73,12 @@ Phase 0-B 产物：`research/literature/lifecycle_gap_matrix.csv`、`research/re
 - Next step：停止。不得进入完整 RCHAM、层级/decay/hardware rescue、真实 benchmark 或 Transformer 实现；只有提出新的、经人工批准的可证伪假设后才能继续。
 
 产物：`research/experiments/phase1_minimal/`、`research/reports/phase1_minimal_principle_test.md`。完整 raw trace 位于本地 `results/full/raw_traces.jsonl`，manifest 保存 SHA-256；sample trace、汇总 CSV 和测试代码纳入版本控制。
+
+## 2026-09-15 · PHASE1R-DISCRIMINATIVE-PRINCIPLE-001
+
+- Hypothesis：使用真实的 q1 counterfactual gold-answer log-probability difference 后，Task Utility 应能在相同 admission budget 下与 RMM-like demonstrated signal 产生可观察决策分歧，并可能更好预测 q2/q3 的 future-useful retention。
+- Configuration：独立 `research/experiments/phase1r/`；固定 lexical answer scorer（无训练、无外部模型）；3 seeds `[7, 11, 19]`、capacities `[8, 16]`、pressure `[2x, 4x]`、9 个场景、6 个 policy。q1 后所有 policy 共享 `capacity//2` admission slots；RMM-like 使用 q1 attention × frozen-model correctness，并在报告中明确这是 RMM 的 block-level adaptation，不是 token-level fixed-lag 复现。
+- Pre-flight：108 个 episode-budget 单元中，24 个（22.2%）出现 RMM/Task retained-set disagreement，超过 20% gate；eviction decision disagreement 为 60/108，score vector disagreement 为 108/108。
+- Result：全部 episode 中 RMM-like future retention `0.556`，Task Utility `0.389`；真正分歧的 24 个单元中 RMM-like `0.833`、Task Utility `0.083`。Task Utility future-retention win rate `0/24`，combined q2/q3 accuracy win rate `0/24`。Recency、frequency、attention 在共享 q1 admission 后不再结构性饱和为零。
+- Interpretation：`NO-GO`。这次修正确实使 policy 可区分，但当前 frozen lexical counterfactual signal 在分歧样本上不优于 RMM-like，反而更差；不能用 hierarchy、decay、hardware tier 或更大 benchmark 挽救本阶段结论。该结果也暴露了“gold-answer token support”与语义证据归因之间的限制。
+- Next step：停止。不得进入完整 RCHAM、Transformer、GPU 或 Phase 1 后续扩展；保留 Phase 1R raw traces、pre-flight gate、测试和报告供复核。
