@@ -63,3 +63,13 @@
 - Next step：停止。只有人工确认该 failure mode 值得研究后，才允许设计算法或实现最小 lifecycle benchmark。当前不进入 Phase 1，不训练模型，不启动 GPU。
 
 Phase 0-B 产物：`research/literature/lifecycle_gap_matrix.csv`、`research/reports/phase0_b_lifecycle_gap_falsification.md`，并同步更新 architecture landscape、evidence ledger、reproduction warnings、open problem map 和 novelty boundary。
+
+## 2026-09-15 · PHASE1-MINIMAL-PRINCIPLE-001
+
+- Hypothesis：q1 完成后得到的 task-level counterfactual utility，是否比 recency、frequency、attention 和 RMM-like demonstrated-attention 更能预测 q2/q3 前应该保留的 evidence。
+- Configuration：确定性 synthetic episodes；3 seeds `[7, 11, 19]`、capacities `[8, 16]`、pressure `[2x, 4x]`、8 个场景、6 个 policy，共 96 episodes / 576 runs。q1 使用固定 evidence routing；task utility 只在 q1 完成后计算；`oracle_future_reuse` 仅作为不可部署上界。无 Transformer、GPU、offload 或 latency 实验。
+- Result：task utility 的 future-useful retention `0.458`，q2/q3 hot answer accuracy `0.375/0.500`；attention、frequency、recency 在当前压力下均为 `0.000`；RMM-like 与 task utility 完全相同，future retention `0.458`、q2/q3 accuracy `0.375/0.500`。Oracle future-reuse 上界为 `0.823` retention、`1.000/1.000` accuracy。
+- Interpretation：`NO-GO`。task utility 明显优于 attention/recency/frequency，但没有优于 RMM-like；因此不能证明 task-level counterfactual signal 有独立预测价值。注意前三个 baseline 在 2x/4x pressure 下饱和为零，这个饱和已作为限制保留，不能解释成普遍 superiority。
+- Next step：停止。不得进入完整 RCHAM、层级/decay/hardware rescue、真实 benchmark 或 Transformer 实现；只有提出新的、经人工批准的可证伪假设后才能继续。
+
+产物：`research/experiments/phase1_minimal/`、`research/reports/phase1_minimal_principle_test.md`。完整 raw trace 位于本地 `results/full/raw_traces.jsonl`，manifest 保存 SHA-256；sample trace、汇总 CSV 和测试代码纳入版本控制。

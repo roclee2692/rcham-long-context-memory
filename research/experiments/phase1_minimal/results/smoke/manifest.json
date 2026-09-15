@@ -1,0 +1,39 @@
+{
+  "episode_count": 8,
+  "run_count": 48,
+  "smoke": true,
+  "config": {
+    "seed_list": [
+      7
+    ],
+    "capacities": [
+      8
+    ],
+    "pressure_factors": [
+      2
+    ],
+    "scenarios": [
+      "repeated_useful",
+      "related_nonidentical",
+      "frequent_useless",
+      "state_update",
+      "negation_condition",
+      "cross_event",
+      "delayed_reuse",
+      "obsolete_information"
+    ],
+    "policies": [
+      "recency",
+      "frequency",
+      "attention",
+      "rmm_like",
+      "task_utility",
+      "oracle_future_reuse"
+    ],
+    "block_sizes": {
+      "hot_bytes": 128,
+      "raw_bytes": 256
+    }
+  },
+  "raw_trace_sha256": "9366d22bbffc2bccfe3f9c50d4241ae48cb862cfd23a215dab0fdc8746dda1b4"
+}

@@ -1,0 +1,7 @@
+policy,n,future_useful_retention,q2_future_useful_retention,q3_future_useful_retention,q2_hot_evidence_recall,q3_hot_evidence_recall,q2_answer_accuracy,q3_answer_accuracy,retained_useless_blocks,retention_precision,eviction_regret,promotion_count,eviction_count,churn,cold_blocks_total,cold_bytes_total
+attention,96,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,53.875,41.875,95.75,5.875,1504.0
+frequency,96,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,53.875,41.875,95.75,5.875,1504.0
+oracle_future_reuse,96,0.822917,0.791667,0.854167,1.0,1.0,1.0,1.0,0.0,1.0,0.177083,53.875,41.875,95.75,2.125,544.0
+recency,96,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,53.875,41.875,95.75,5.875,1504.0
+rmm_like,96,0.458333,0.395833,0.520833,0.5,0.625,0.375,0.5,0.0,1.0,0.541667,55.25,43.25,98.5,4.375,1120.0
+task_utility,96,0.458333,0.395833,0.520833,0.5,0.625,0.375,0.5,0.0,1.0,0.541667,55.25,43.25,98.5,4.375,1120.0
